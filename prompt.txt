@@ -1,0 +1,275 @@
+Hãy implement ứng dụng Slideshow với Audio và Subtitle theo tài liệu specification sau:
+
+```
+Tài liệu chi tiết: Ứng dụng Slideshow với Audio và Subtitle
+1. Tổng quan dự án
+Mục tiêu
+Xây dựng ứng dụng React slideshow hiển thị ảnh full-screen với audio và subtitle đồng bộ, không cần backend server.
+Công nghệ sử dụng
+
+Frontend: React.js với hooks
+Build tool: Create React App hoặc Vite
+Audio processing: HTML5 Audio API
+File processing: Node.js scripts
+Storage: LocalStorage cho caching
+
+2. Cấu trúc dự án
+slideshow-app/
+├── public/
+│   ├── data/
+│   │   └── metadata.json (generated)
+│   ├── images/
+│   │   ├── 1.jpg
+│   │   ├── 2.jpg
+│   │   └── ...
+│   ├── audios/
+│   │   ├── 1.mp3
+│   │   ├── 2.mp3
+│   │   └── ...
+│   └── subtitles/
+│       ├── 1.txt
+│       ├── 2.txt
+│       └── ...
+├── scripts/
+│   └── generate-metadata.js
+├── src/
+│   ├── components/
+│   │   ├── SlideShow.js
+│   │   ├── AudioController.js
+│   │   ├── SubtitleDisplay.js
+│   │   └── NavigationControls.js
+│   ├── hooks/
+│   │   ├── useMetadata.js
+│   │   ├── useAudio.js
+│   │   └── useKeyboard.js
+│   ├── utils/
+│   │   ├── cache.js
+│   │   └── subtitleTiming.js
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+3. Logic tính toán subtitle timing
+Thuật toán phân chia subtitle
+javascriptfunction calculateSubtitleTiming(textContent, audioDuration) {
+  // 1. Tách text thành segments tại dấu câu
+  const segments = splitByPunctuation(textContent, ['.', ',', '!', '?', ';', ':']);
+  
+  // 2. Tính toán timing
+  const totalChars = textContent.replace(/[.,!?;:\s]/g, '').length; // Chỉ đếm chữ
+  const baseTimePerChar = audioDuration / totalChars;
+  
+  // 3. Thời gian nghỉ tại dấu câu
+  const pauseTimes = {
+    '.': 0.5, // giây
+    '!': 0.5,
+    '?': 0.5,
+    ',': 0.3,
+    ';': 0.4,
+    ':': 0.4
+  };
+  
+  // 4. Tạo timeline với pause
+  let currentTime = 0;
+  const timeline = segments.map(segment => {
+    const duration = segment.charCount * baseTimePerChar;
+    const pauseTime = pauseTimes[segment.endPunctuation] || 0.1;
+    
+    const item = {
+      text: segment.text.trim(),
+      startTime: currentTime,
+      endTime: currentTime + duration,
+      pauseAfter: pauseTime
+    };
+    
+    currentTime = item.endTime + pauseTime;
+    return item;
+  });
+  
+  return timeline;
+}
+Quy tắc phân đoạn
+
+Dấu chấm (.): Nghỉ 0.5 giây
+Dấu phẩy (,): Nghỉ 0.3 giây
+Dấu hỏi (?), cảm thán (!): Nghỉ 0.5 giây
+Dấu chấm phẩy (;), hai chấm (:): Nghỉ 0.4 giây
+
+4. Script generate-metadata.js
+Chức năng chính
+
+Scan files: Quét 3 thư mục images/, audios/, subtitles/
+Validation: Kiểm tra mapping files (1.jpg ↔ 1.mp3 ↔ 1.txt)
+Audio duration: Sử dụng thư viện get-audio-duration hoặc node-ffprobe
+Subtitle processing: Đọc file .txt và tính toán timeline
+Generate metadata: Tạo file metadata.json với version control
+
+Dependencies cần thiết
+json{
+  "get-audio-duration": "^4.0.0", // hoặc "node-ffprobe"
+  "fs": "built-in",
+  "path": "built-in"
+}
+Output format (metadata.json)
+json{
+  "version": 1,
+  "generatedAt": "2025-07-25T10:30:00.000Z",
+  "totalSlides": 10,
+  "slides": [
+    {
+      "id": 1,
+      "image": "images/1.jpg",
+      "audio": "audios/1.mp3", 
+      "audioDuration": 15.5,
+      "subtitleContent": "Full text content here...",
+      "subtitleTimeline": [
+        {
+          "text": "Segment text",
+          "startTime": 0,
+          "endTime": 2.5,
+          "pauseAfter": 0.3
+        }
+      ]
+    }
+  ]
+}
+5. Caching Strategy
+Cache keys
+
+slideshow_metadata: Lưu toàn bộ metadata
+slideshow_metadata_version: Lưu version number
+
+Cache flow
+
+Load: Kiểm tra cache trước, nếu có thì dùng ngay
+Background check: Fetch metadata.json để check version mới
+Update: Nếu version mới hơn, update cache và state
+Invalidation: Clear cache khi có lỗi hoặc version conflict
+
+Cache utilities
+
+getCachedMetadata(): Đọc từ localStorage
+setCachedMetadata(data): Ghi vào localStorage
+clearCache(): Xóa cache khi cần
+
+6. React Components Architecture
+App.js (Main)
+
+Load metadata với caching
+Quản lý global state
+Render SlideShow component
+
+SlideShow.js (Container)
+
+State: currentSlide, isPlaying, currentSubtitleIndex
+Keyboard shortcuts handling
+Audio lifecycle management
+Auto-advance khi audio kết thúc
+
+AudioController.js
+
+HTML5 Audio element wrapper
+Play/Pause controls
+Audio loading và error handling
+Progress tracking cho subtitle sync
+
+SubtitleDisplay.js
+
+Hiển thị subtitle theo timeline
+Animation/transition effects
+Text formatting và positioning
+
+NavigationControls.js
+
+Previous/Next buttons
+Play/Pause button
+UI positioning (góc màn hình)
+
+7. Hooks và Utilities
+useMetadata.js
+
+Fetch metadata với caching logic
+Loading states management
+Error handling
+
+useAudio.js
+
+Audio control logic
+Sync với subtitle timeline
+Auto-advance logic
+
+useKeyboard.js
+
+Space: Play/Pause
+Arrow Left: Previous slide
+Arrow Right: Next slide
+Escape: Stop và reset
+
+cache.js
+
+LocalStorage wrapper
+Error handling cho storage
+Cache validation
+
+8. UI/UX Requirements
+Layout
+
+Full-screen image: Background cover
+Play/Pause button: Góc phải, trên cùng
+Previous button: Góc trái
+Next button: Góc phải
+Subtitle: Dưới cùng, center, với background overlay
+
+Transitions
+
+Slide change: Fade transition (0.3s)
+Subtitle: Smooth text change
+Audio: Fade out khi chuyển slide
+
+Responsive
+
+Hỗ trợ mobile và desktop
+Touch gestures cho mobile (swipe)
+
+9. Workflow
+Development workflow
+
+Chuẩn bị files (images/, audios/, subtitles/)
+Chạy: node scripts/generate-metadata.js
+Start React app: npm start
+Test và debug
+
+Production deployment
+
+Generate metadata cuối cùng
+Build React app: npm run build
+Deploy build folder lên static hosting
+Không cần server backend
+
+10. Error Handling
+File validation
+
+Kiểm tra tồn tại đủ 3 files tương ứng
+Validation audio format và duration
+Backup plans khi thiếu files
+
+Runtime errors
+
+Audio load failures
+Network errors khi fetch metadata
+Cache corruption recovery
+Graceful degradation
+```
+
+Yêu cầu implementation:
+1. Tạo đầy đủ cấu trúc thư mục như đã mô tả
+2. Implement script generate-metadata.js với đầy đủ logic tính toán subtitle timing
+3. Tạo tất cả React components với proper hooks và state management
+4. Implement caching strategy với localStorage
+5. Xử lý keyboard shortcuts và UI controls
+6. Responsive design cho cả desktop và mobile
+7. Error handling và loading states
+8. Smooth transitions và animations
+
+Bắt đầu với package.json và cấu trúc project, sau đó implement từng component một cách chi tiết.
+Đảm bảo code quality cao, có comments tiếng Việt, và follow React best practices.

@@ -1,0 +1,1669 @@
+{
+  "version": 1,
+  "generatedAt": "2025-07-25T10:00:26.995Z",
+  "totalSlides": 20,
+  "slides": [
+    {
+      "id": 1,
+      "image": "images/1.png",
+      "audio": "audios/1.mp3",
+      "audioDuration": 31.03,
+      "subtitleContent": "Good morning everyone. Today we're going to explore how AI is transforming software development. I'm Alex Tran, and I've been working with AI development tools for the past three months. We'll look at practical ways AI can help us in every stage of building software - from understanding what customers want to deploying the final product. This isn't about replacing developers, it's about making us more effective and productive.",
+      "subtitleTimeline": [
+        {
+          "text": "Good morning everyone.",
+          "startTime": 0,
+          "endTime": 1.660867605633803,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Today we're going to explore how AI is transforming software development.",
+          "startTime": 1.710867605633803,
+          "endTime": 7.130540845070423,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I'm Alex Tran,",
+          "startTime": 7.180540845070423,
+          "endTime": 8.142095774647888,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and I've been working with AI development tools for the past three months.",
+          "startTime": 8.192095774647889,
+          "endTime": 13.524354929577466,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "We'll look at practical ways AI can help us in every stage of building software - from understanding what customers want to deploying the final product.",
+          "startTime": 13.574354929577467,
+          "endTime": 24.58852957746479,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "This isn't about replacing developers,",
+          "startTime": 24.63852957746479,
+          "endTime": 27.523194366197185,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "it's about making us more effective and productive.",
+          "startTime": 27.573194366197185,
+          "endTime": 31.332,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "images/2.png",
+      "audio": "audios/2.mp3",
+      "audioDuration": 35.42,
+      "subtitleContent": "Here's what we'll cover today. First, we'll talk about why AI matters in software development right now. Then we'll walk through each phase of the software development lifecycle and see exactly how AI tools can help. I'll show you real examples and demos. After that, we'll discuss what I've learned from actually using these tools in projects. Finally, we'll talk about how you can start using AI in your own work. The whole session should take about 40 minutes, with time for questions at the end.",
+      "subtitleTimeline": [
+        {
+          "text": "Here's what we'll cover today.",
+          "startTime": 0,
+          "endTime": 2.197518610421836,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "First,",
+          "startTime": 2.2475186104218356,
+          "endTime": 2.687022332506203,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "we'll talk about why AI matters in software development right now.",
+          "startTime": 2.7370223325062026,
+          "endTime": 7.571563275434242,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Then we'll walk through each phase of the software development lifecycle and see exactly how AI tools can help.",
+          "startTime": 7.621563275434242,
+          "endTime": 15.7084317617866,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I'll show you real examples and demos.",
+          "startTime": 15.7584317617866,
+          "endTime": 18.483354838709676,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "After that,",
+          "startTime": 18.533354838709677,
+          "endTime": 19.324461538461538,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "we'll discuss what I've learned from actually using these tools in projects.",
+          "startTime": 19.37446153846154,
+          "endTime": 25.00010918114144,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Finally,",
+          "startTime": 25.05010918114144,
+          "endTime": 25.665414392059553,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "we'll talk about how you can start using AI in your own work.",
+          "startTime": 25.715414392059554,
+          "endTime": 29.934650124069478,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The whole session should take about 40 minutes,",
+          "startTime": 29.98465012406948,
+          "endTime": 33.412779156327545,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "with time for questions at the end.",
+          "startTime": 33.46277915632754,
+          "endTime": 35.924,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "images/3.png",
+      "audio": "audios/3.mp3",
+      "audioDuration": 44.78,
+      "subtitleContent": "Let's start with why we need AI in development. We all face these challenges every day. Requirements from clients are often unclear or keep changing. We spend hours debugging code and reviewing each other's work. Writing documentation is tedious but necessary. These aren't new problems, but AI gives us new ways to handle them. AI can help us understand requirements better, catch bugs earlier, generate documentation automatically, and make code reviews more efficient. The goal isn't to replace our thinking - it's to handle the repetitive stuff so we can focus on the creative problem-solving that we actually enjoy.",
+      "subtitleTimeline": [
+        {
+          "text": "Let's start with why we need AI in development.",
+          "startTime": 0,
+          "endTime": 3.3368470588235293,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "We all face these challenges every day.",
+          "startTime": 3.386847058823529,
+          "endTime": 6.196823529411764,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Requirements from clients are often unclear or keep changing.",
+          "startTime": 6.246823529411764,
+          "endTime": 10.813035294117647,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "We spend hours debugging code and reviewing each other's work.",
+          "startTime": 10.863035294117648,
+          "endTime": 15.429247058823531,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Writing documentation is tedious but necessary.",
+          "startTime": 15.479247058823532,
+          "endTime": 19.079529411764707,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "These aren't new problems,",
+          "startTime": 19.129529411764707,
+          "endTime": 21.061388235294118,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "but AI gives us new ways to handle them.",
+          "startTime": 21.11138823529412,
+          "endTime": 23.83355294117647,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI can help us understand requirements better,",
+          "startTime": 23.88355294117647,
+          "endTime": 27.308211764705884,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "catch bugs earlier,",
+          "startTime": 27.358211764705885,
+          "endTime": 28.7632,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "generate documentation automatically,",
+          "startTime": 28.813200000000002,
+          "endTime": 31.7988,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and make code reviews more efficient.",
+          "startTime": 31.8488,
+          "endTime": 34.57096470588235,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The goal isn't to replace our thinking - it's to handle the repetitive stuff so we can focus on the creative problem-solving that we actually enjoy.",
+          "startTime": 34.62096470588235,
+          "endTime": 45.333999999999996,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "images/4.png",
+      "audio": "audios/4.mp3",
+      "audioDuration": 45.97,
+      "subtitleContent": "Let's start with requirements gathering. Usually, we get requirements in messy formats - long emails, PDF documents, meeting notes. AI can process all this text and extract the actual requirements. For example, I can upload a 10-page requirements document, and AI will identify all the functional requirements, non-functional requirements, and even spot potential conflicts. It saves hours of manual reading and note-taking. The AI doesn't just copy text - it understands context and organizes information logically. This gives us a much cleaner starting point for our projects.",
+      "subtitleTimeline": [
+        {
+          "text": "Let's start with requirements gathering.",
+          "startTime": 0,
+          "endTime": 3.366150627615063,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Usually,",
+          "startTime": 3.4161506276150626,
+          "endTime": 4.089380753138075,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "we get requirements in messy formats - long emails,",
+          "startTime": 4.139380753138075,
+          "endTime": 8.17876150627615,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "PDF documents,",
+          "startTime": 8.22876150627615,
+          "endTime": 9.382870292887029,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "meeting notes.",
+          "startTime": 9.43287029288703,
+          "endTime": 10.586979079497908,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI can process all this text and extract the actual requirements.",
+          "startTime": 10.636979079497909,
+          "endTime": 15.830468619246863,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "For example,",
+          "startTime": 15.880468619246864,
+          "endTime": 16.842225941422598,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I can upload a 10-page requirements document,",
+          "startTime": 16.8922259414226,
+          "endTime": 20.54690376569038,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and AI will identify all the functional requirements,",
+          "startTime": 20.59690376569038,
+          "endTime": 24.924811715481177,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "non-functional requirements,",
+          "startTime": 24.974811715481177,
+          "endTime": 27.475380753138083,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and even spot potential conflicts.",
+          "startTime": 27.525380753138084,
+          "endTime": 30.31447698744771,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It saves hours of manual reading and note-taking.",
+          "startTime": 30.36447698744771,
+          "endTime": 34.30768200836821,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The AI doesn't just copy text - it understands context and organizes information logically.",
+          "startTime": 34.35768200836821,
+          "endTime": 41.76321338912135,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "This gives us a much cleaner starting point for our projects.",
+          "startTime": 41.813213389121344,
+          "endTime": 46.62200000000001,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "images/5.png",
+      "audio": "audios/5.mp3",
+      "audioDuration": 36.76,
+      "subtitleContent": "Even better than analyzing documents is using AI chatbots to gather requirements directly. Instead of sending clients long forms to fill out, we can have them talk to an AI bot in natural language. The bot asks smart follow-up questions based on what the client says. For example, if a client says 'I need an e-commerce website,' the bot automatically asks about payment methods, shipping, inventory management, and so on. At the end of the conversation, we get a structured requirements document. I've used this approach with three clients this year, and it's amazing how much clearer the requirements become when clients can just talk naturally instead of filling out forms.",
+      "subtitleTimeline": [
+        {
+          "text": "Even better than analyzing documents is using AI chatbots to gather requirements directly.",
+          "startTime": 0,
+          "endTime": 5.127195652173913,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Instead of sending clients long forms to fill out,",
+          "startTime": 5.177195652173912,
+          "endTime": 7.907260869565217,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "we can have them talk to an AI bot in natural language.",
+          "startTime": 7.957260869565217,
+          "endTime": 10.8205,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The bot asks smart follow-up questions based on what the client says.",
+          "startTime": 10.8705,
+          "endTime": 14.66595652173913,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "For example,",
+          "startTime": 14.71595652173913,
+          "endTime": 15.381826086956522,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "if a client says 'I need an e-commerce website,",
+          "startTime": 15.431826086956523,
+          "endTime": 17.96213043478261,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "' the bot automatically asks about payment methods,",
+          "startTime": 18.01213043478261,
+          "endTime": 20.87536956521739,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "shipping,",
+          "startTime": 20.92536956521739,
+          "endTime": 21.458065217391304,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "inventory management,",
+          "startTime": 21.508065217391305,
+          "endTime": 22.77321739130435,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and so on.",
+          "startTime": 22.82321739130435,
+          "endTime": 23.289326086956525,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "At the end of the conversation,",
+          "startTime": 23.339326086956525,
+          "endTime": 25.004000000000005,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "we get a structured requirements document.",
+          "startTime": 25.054000000000006,
+          "endTime": 27.451130434782613,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I've used this approach with three clients this year,",
+          "startTime": 27.501130434782613,
+          "endTime": 30.430956521739134,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and it's amazing how much clearer the requirements become when clients can just talk naturally instead of filling out forms.",
+          "startTime": 30.480956521739135,
+          "endTime": 37.406000000000006,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "images/6.png",
+      "audio": "audios/6.mp3",
+      "audioDuration": 47.45,
+      "subtitleContent": "AI also helps us turn vague requirements into clear, actionable user stories. Let's say a client says 'Users should be able to log in.' That's pretty vague, right? AI can automatically generate clarifying questions like: 'Should users log in with email or username? Do you need social login options? How long should sessions last?' Then it converts the final requirement into proper user stories with acceptance criteria. This used to take me hours of back-and-forth emails with clients. Now it happens in minutes, and the quality is actually better because AI remembers to ask about edge cases that I might forget.",
+      "subtitleTimeline": [
+        {
+          "text": "AI also helps us turn vague requirements into clear,",
+          "startTime": 0,
+          "endTime": 4.064270916334661,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "actionable user stories.",
+          "startTime": 4.114270916334661,
+          "endTime": 6.099147410358565,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Let's say a client says 'Users should be able to log in.",
+          "startTime": 6.149147410358565,
+          "endTime": 10.307936254980078,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "' That's pretty vague,",
+          "startTime": 10.357936254980078,
+          "endTime": 12.059258964143424,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "right?",
+          "startTime": 12.109258964143425,
+          "endTime": 12.581848605577688,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI can automatically generate clarifying questions like:",
+          "startTime": 12.631848605577689,
+          "endTime": 17.263227091633468,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "'Should users log in with email or username?",
+          "startTime": 17.31322709163347,
+          "endTime": 20.71587250996016,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Do you need social login options?",
+          "startTime": 20.76587250996016,
+          "endTime": 23.317856573705182,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "How long should sessions last?",
+          "startTime": 23.367856573705183,
+          "endTime": 25.730804780876497,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "' Then it converts the final requirement into proper user stories with acceptance criteria.",
+          "startTime": 25.780804780876498,
+          "endTime": 33.05868525896415,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "This used to take me hours of back-and-forth emails with clients.",
+          "startTime": 33.108685258964144,
+          "endTime": 38.212653386454186,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Now it happens in minutes,",
+          "startTime": 38.26265338645418,
+          "endTime": 40.24752988047808,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and the quality is actually better because AI remembers to ask about edge cases that I might forget.",
+          "startTime": 40.29752988047808,
+          "endTime": 48.047999999999995,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "images/7.png",
+      "audio": "audios/7.mp3",
+      "audioDuration": 49.36,
+      "subtitleContent": "Once we have clear requirements, AI helps break them down into manageable tasks. You give it a high-level feature, and it creates a complete breakdown structure. For example, 'User Management' becomes registration, login, profile management, password reset, and so on. Each of these gets broken down further into specific development tasks. AI also estimates how complex each task is and identifies dependencies. It's like having an experienced project manager helping you plan. I've found that AI-generated breakdowns are often more thorough than what I would create manually, especially for features outside my main expertise.",
+      "subtitleTimeline": [
+        {
+          "text": "Once we have clear requirements,",
+          "startTime": 0,
+          "endTime": 2.5627153846153847,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI helps break them down into manageable tasks.",
+          "startTime": 2.6127153846153846,
+          "endTime": 6.314415384615385,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "You give it a high-level feature,",
+          "startTime": 6.364415384615385,
+          "endTime": 8.92713076923077,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and it creates a complete breakdown structure.",
+          "startTime": 8.97713076923077,
+          "endTime": 12.678830769230771,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "For example,",
+          "startTime": 12.728830769230772,
+          "endTime": 13.677984615384618,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "'User Management' becomes registration,",
+          "startTime": 13.727984615384619,
+          "endTime": 17.050023076923082,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "login,",
+          "startTime": 17.100023076923083,
+          "endTime": 17.574600000000007,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "profile management,",
+          "startTime": 17.624600000000008,
+          "endTime": 19.238161538461547,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "password reset,",
+          "startTime": 19.288161538461548,
+          "endTime": 20.52206153846155,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and so on.",
+          "startTime": 20.57206153846155,
+          "endTime": 21.23646923076924,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Each of these gets broken down further into specific development tasks.",
+          "startTime": 21.286469230769242,
+          "endTime": 26.981392307692317,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI also estimates how complex each task is and identifies dependencies.",
+          "startTime": 27.031392307692318,
+          "endTime": 32.7263153846154,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It's like having an experienced project manager helping you plan.",
+          "startTime": 32.776315384615394,
+          "endTime": 37.99666153846155,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I've found that AI-generated breakdowns are often more thorough than what I would create manually,",
+          "startTime": 38.04666153846155,
+          "endTime": 45.92463846153847,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "especially for features outside my main expertise.",
+          "startTime": 45.97463846153847,
+          "endTime": 50.056000000000004,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "images/8.png",
+      "audio": "audios/8.mp3",
+      "audioDuration": 42.23,
+      "subtitleContent": "AI also optimizes project timelines. It identifies which tasks can run in parallel, suggests the best sequence for development, and even flags potential bottlenecks. For instance, it might suggest starting API design early so frontend and backend teams can work simultaneously. Or it might warn that integrating with a third-party payment system could cause delays, so we should start that early. This kind of planning used to require experienced project managers. Now AI gives every developer access to this kind of strategic thinking.",
+      "subtitleTimeline": [
+        {
+          "text": "AI also optimizes project timelines.",
+          "startTime": 0,
+          "endTime": 2.9483513513513517,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It identifies which tasks can run in parallel,",
+          "startTime": 2.9983513513513516,
+          "endTime": 6.61245945945946,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "suggests the best sequence for development,",
+          "startTime": 6.66245945945946,
+          "endTime": 10.181459459459461,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and even flags potential bottlenecks.",
+          "startTime": 10.231459459459462,
+          "endTime": 13.274918918918921,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "For instance,",
+          "startTime": 13.324918918918922,
+          "endTime": 14.37110810810811,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "it might suggest starting API design early so frontend and backend teams can work simultaneously.",
+          "startTime": 14.421108108108111,
+          "endTime": 22.219972972972975,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Or it might warn that integrating with a third-party payment system could cause delays,",
+          "startTime": 22.269972972972976,
+          "endTime": 29.21286486486487,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "so we should start that early.",
+          "startTime": 29.26286486486487,
+          "endTime": 31.545459459459465,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "This kind of planning used to require experienced project managers.",
+          "startTime": 31.595459459459466,
+          "endTime": 37.01662162162163,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Now AI gives every developer access to this kind of strategic thinking.",
+          "startTime": 37.06662162162163,
+          "endTime": 42.678000000000004,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "images/9.png",
+      "audio": "audios/9.mp3",
+      "audioDuration": 44.53,
+      "subtitleContent": "Now let's talk about the most visible use of AI in development - code generation. GitHub Copilot is probably the most popular tool for this. You write a comment describing what you want, and it generates the code. But it's smarter than simple templates. It understands your project context, follows your coding style, and even suggests better approaches than what you might have planned. I use it every day now. It's especially helpful for boilerplate code, API integrations, and implementing common patterns. The key is learning how to write good prompts - the better you describe what you want, the better code you get.",
+      "subtitleTimeline": [
+        {
+          "text": "Now let's talk about the most visible use of AI in development - code generation.",
+          "startTime": 0,
+          "endTime": 5.831571428571428,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "GitHub Copilot is probably the most popular tool for this.",
+          "startTime": 5.881571428571428,
+          "endTime": 10.122714285714284,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "You write a comment describing what you want,",
+          "startTime": 10.172714285714285,
+          "endTime": 13.441928571428571,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and it generates the code.",
+          "startTime": 13.491928571428572,
+          "endTime": 15.347428571428571,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "But it's smarter than simple templates.",
+          "startTime": 15.397428571428572,
+          "endTime": 18.313214285714285,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It understands your project context,",
+          "startTime": 18.363214285714285,
+          "endTime": 21.102285714285713,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "follows your coding style,",
+          "startTime": 21.152285714285714,
+          "endTime": 23.09614285714286,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and even suggests better approaches than what you might have planned.",
+          "startTime": 23.14614285714286,
+          "endTime": 28.270857142857146,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I use it every day now.",
+          "startTime": 28.320857142857147,
+          "endTime": 29.822928571428577,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It's especially helpful for boilerplate code,",
+          "startTime": 29.872928571428577,
+          "endTime": 33.31885714285715,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "API integrations,",
+          "startTime": 33.368857142857145,
+          "endTime": 34.69421428571429,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and implementing common patterns.",
+          "startTime": 34.744214285714285,
+          "endTime": 37.30657142857143,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The key is learning how to write good prompts - the better you describe what you want,",
+          "startTime": 37.35657142857143,
+          "endTime": 43.45321428571428,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "the better code you get.",
+          "startTime": 43.50321428571428,
+          "endTime": 45.181999999999995,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "image": "images/10.png",
+      "audio": "audios/10.mp3",
+      "audioDuration": 47.23,
+      "subtitleContent": "AI also revolutionizes code review. Traditional code review focuses on style and obvious bugs. AI code review goes much deeper. It catches security vulnerabilities, performance issues, and suggests better algorithms. For example, it might spot a SQL injection vulnerability that human reviewers miss, or suggest using a more efficient data structure. It also ensures consistency across the team - everyone gets feedback based on the same standards. This doesn't replace human code review, but it handles the technical stuff so human reviewers can focus on business logic and architecture decisions.",
+      "subtitleTimeline": [
+        {
+          "text": "AI also revolutionizes code review.",
+          "startTime": 0,
+          "endTime": 2.8510261569416495,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Traditional code review focuses on style and obvious bugs.",
+          "startTime": 2.9010261569416493,
+          "endTime": 7.557702213279677,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI code review goes much deeper.",
+          "startTime": 7.607702213279677,
+          "endTime": 10.078591549295773,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It catches security vulnerabilities,",
+          "startTime": 10.128591549295773,
+          "endTime": 13.1696861167002,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "performance issues,",
+          "startTime": 13.2196861167002,
+          "endTime": 14.835267605633803,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and suggests better algorithms.",
+          "startTime": 14.885267605633803,
+          "endTime": 17.45119114688129,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "For example,",
+          "startTime": 17.50119114688129,
+          "endTime": 18.451533199195172,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "it might spot a SQL injection vulnerability that human reviewers miss,",
+          "startTime": 18.501533199195173,
+          "endTime": 24.108551307847083,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "or suggest using a more efficient data structure.",
+          "startTime": 24.158551307847084,
+          "endTime": 28.054953722334005,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It also ensures consistency across the team - everyone gets feedback based on the same standards.",
+          "startTime": 28.104953722334006,
+          "endTime": 35.80272434607646,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "This doesn't replace human code review,",
+          "startTime": 35.85272434607646,
+          "endTime": 38.98885311871227,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "but it handles the technical stuff so human reviewers can focus on business logic and architecture decisions.",
+          "startTime": 39.03885311871227,
+          "endTime": 47.782,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "image": "images/11.png",
+      "audio": "audios/11.mp3",
+      "audioDuration": 45.04,
+      "subtitleContent": "AI is excellent at spotting bugs before they reach production. It recognizes common bug patterns and suggests fixes. For instance, it might catch null pointer exceptions, memory leaks, or race conditions. It also suggests refactoring opportunities - like extracting repeated code into functions or suggesting better design patterns. What's really impressive is that AI learns from the entire codebase, so it maintains consistency with existing patterns. I've had AI catch bugs that would have taken hours to debug later. It's like having a senior developer constantly reviewing your code.",
+      "subtitleTimeline": [
+        {
+          "text": "AI is excellent at spotting bugs before they reach production.",
+          "startTime": 0,
+          "endTime": 4.789104294478528,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It recognizes common bug patterns and suggests fixes.",
+          "startTime": 4.839104294478528,
+          "endTime": 8.983521472392638,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "For instance,",
+          "startTime": 9.03352147239264,
+          "endTime": 10.046601226993866,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "it might catch null pointer exceptions,",
+          "startTime": 10.096601226993867,
+          "endTime": 13.135840490797548,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "memory leaks,",
+          "startTime": 13.185840490797549,
+          "endTime": 14.198920245398776,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "or race conditions.",
+          "startTime": 14.248920245398777,
+          "endTime": 15.722490797546016,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It also suggests refactoring opportunities - like extracting repeated code into functions or suggesting better design patterns.",
+          "startTime": 15.772490797546016,
+          "endTime": 25.903288343558287,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "What's really impressive is that AI learns from the entire codebase,",
+          "startTime": 25.953288343558288,
+          "endTime": 31.202883435582827,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "so it maintains consistency with existing patterns.",
+          "startTime": 31.252883435582827,
+          "endTime": 35.30520245398773,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I've had AI catch bugs that would have taken hours to debug later.",
+          "startTime": 35.35520245398773,
+          "endTime": 40.23640490797546,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It's like having a senior developer constantly reviewing your code.",
+          "startTime": 40.28640490797546,
+          "endTime": 45.536,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "image": "images/12.png",
+      "audio": "audios/12.mp3",
+      "audioDuration": 43.45,
+      "subtitleContent": "Security is where AI really shines. It scans code for vulnerabilities in real-time as you write it. It catches common issues like XSS vulnerabilities, weak authentication, and insecure data handling. But it goes beyond that - it also scans your dependencies for known vulnerabilities and suggests secure alternatives. The best part is that it explains why something is a security risk and how to fix it. This is incredibly valuable for teams that don't have dedicated security experts. AI essentially gives every developer security expertise.",
+      "subtitleTimeline": [
+        {
+          "text": "Security is where AI really shines.",
+          "startTime": 0,
+          "endTime": 2.806476614699332,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It scans code for vulnerabilities in real-time as you write it.",
+          "startTime": 2.8564766146993317,
+          "endTime": 7.888779510022271,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It catches common issues like XSS vulnerabilities,",
+          "startTime": 7.938779510022271,
+          "endTime": 12.100106904231625,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "weak authentication,",
+          "startTime": 12.150106904231626,
+          "endTime": 13.892057906458797,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and insecure data handling.",
+          "startTime": 13.942057906458798,
+          "endTime": 16.167884187082407,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "But it goes beyond that - it also scans your dependencies for known vulnerabilities and suggests secure alternatives.",
+          "startTime": 16.217884187082408,
+          "endTime": 25.79861469933185,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The best part is that it explains why something is a security risk and how to fix it.",
+          "startTime": 25.84861469933185,
+          "endTime": 32.3325434298441,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "This is incredibly valuable for teams that don't have dedicated security experts.",
+          "startTime": 32.3825434298441,
+          "endTime": 39.06002227171492,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI essentially gives every developer security expertise.",
+          "startTime": 39.11002227171492,
+          "endTime": 43.852,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "image": "images/13.png",
+      "audio": "audios/13.mp3",
+      "audioDuration": 47.48,
+      "subtitleContent": "I'll demo building a 'Food Recipe Suggestion API' using AI assistance. This API takes a list of ingredients like pork, potato, onion, sends a request to Gemini API, and returns suitable recipes. Just by describing the idea in comments, AI generates complete Flask API structure, input validation and error handling, Gemini API integration, and basic tests. Work that usually takes a full day now only takes 20 minutes. The code isn't perfect, but it follows best practices and is ready to deploy. Now I'll pause the slideshow and show you these steps live.",
+      "subtitleTimeline": [
+        {
+          "text": "I'll demo building a 'Food Recipe Suggestion API' using AI assistance.",
+          "startTime": 0,
+          "endTime": 6.23954565701559,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "This API takes a list of ingredients like pork,",
+          "startTime": 6.28954565701559,
+          "endTime": 10.308236080178173,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "potato,",
+          "startTime": 10.358236080178173,
+          "endTime": 10.992766146993318,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "onion,",
+          "startTime": 11.04276614699332,
+          "endTime": 11.571541202672606,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "sends a request to Gemini API,",
+          "startTime": 11.621541202672606,
+          "endTime": 14.159661469933186,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and returns suitable recipes.",
+          "startTime": 14.209661469933186,
+          "endTime": 16.853536748329624,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Just by describing the idea in comments,",
+          "startTime": 16.903536748329625,
+          "endTime": 20.39345211581292,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI generates complete Flask API structure,",
+          "startTime": 20.44345211581292,
+          "endTime": 24.25063251670379,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "input validation and error handling,",
+          "startTime": 24.30063251670379,
+          "endTime": 27.57903786191537,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Gemini API integration,",
+          "startTime": 27.62903786191537,
+          "endTime": 29.74413808463252,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and basic tests.",
+          "startTime": 29.79413808463252,
+          "endTime": 31.168953229398667,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Work that usually takes a full day now only takes 20 minutes.",
+          "startTime": 31.218953229398668,
+          "endTime": 36.40094877505568,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The code isn't perfect,",
+          "startTime": 36.45094877505568,
+          "endTime": 38.46029398663697,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "but it follows best practices and is ready to deploy.",
+          "startTime": 38.51029398663697,
+          "endTime": 43.05775946547884,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Now I'll pause the slideshow and show you these steps live.",
+          "startTime": 43.107759465478836,
+          "endTime": 48.184,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "image": "images/14.png",
+      "audio": "audios/14.mp3",
+      "audioDuration": 50.8,
+      "subtitleContent": "Here are some best practices I've learned from using AI coding tools. First, always review AI-generated code carefully. Just because it compiles doesn't mean it's correct. Provide clear context in your comments - the better you explain what you want, the better results you get. Use AI suggestions as a starting point, not the final answer. Test everything thoroughly - AI can miss edge cases. And don't forget to understand the code AI generates. You'll need to maintain it later. The biggest mistake I see is people becoming too dependent on AI and losing their fundamental coding skills. AI should enhance your abilities, not replace them.",
+      "subtitleTimeline": [
+        {
+          "text": "Here are some best practices I've learned from using AI coding tools.",
+          "startTime": 0,
+          "endTime": 5.536084130019121,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "First,",
+          "startTime": 5.58608413001912,
+          "endTime": 6.071705544933078,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "always review AI-generated code carefully.",
+          "startTime": 6.121705544933078,
+          "endTime": 9.715304015296367,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Just because it compiles doesn't mean it's correct.",
+          "startTime": 9.765304015296367,
+          "endTime": 13.941648183556406,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Provide clear context in your comments - the better you explain what you want,",
+          "startTime": 13.991648183556407,
+          "endTime": 20.207602294455068,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "the better results you get.",
+          "startTime": 20.25760229445507,
+          "endTime": 22.394336520076482,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Use AI suggestions as a starting point,",
+          "startTime": 22.444336520076483,
+          "endTime": 25.552313575525815,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "not the final answer.",
+          "startTime": 25.602313575525816,
+          "endTime": 27.253426386233272,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Test everything thoroughly - AI can miss edge cases.",
+          "startTime": 27.303426386233273,
+          "endTime": 31.47977055449331,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "And don't forget to understand the code AI generates.",
+          "startTime": 31.52977055449331,
+          "endTime": 35.80323900573614,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "You'll need to maintain it later.",
+          "startTime": 35.853239005736135,
+          "endTime": 38.47559464627151,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The biggest mistake I see is people becoming too dependent on AI and losing their fundamental coding skills.",
+          "startTime": 38.52559464627151,
+          "endTime": 47.26678011472275,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI should enhance your abilities,",
+          "startTime": 47.31678011472275,
+          "endTime": 50.03626003824091,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "not replace them.",
+          "startTime": 50.08626003824091,
+          "endTime": 51.44599999999999,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "image": "images/15.png",
+      "audio": "audios/15.mp3",
+      "audioDuration": 42.16,
+      "subtitleContent": "AI also generates comprehensive test suites. Given a function, it creates unit tests covering normal cases, edge cases, and error conditions. It generates integration tests for APIs and even UI tests for web applications. What's impressive is that AI often thinks of test cases that I would miss. It considers boundary values, null inputs, and unusual scenarios. I used to struggle with writing enough tests - now AI generates a comprehensive test suite, and I just review and customize it. Test coverage has improved dramatically on my projects.",
+      "subtitleTimeline": [
+        {
+          "text": "AI also generates comprehensive test suites.",
+          "startTime": 0,
+          "endTime": 3.591766816143498,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Given a function,",
+          "startTime": 3.6417668161434977,
+          "endTime": 4.96504932735426,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "it creates unit tests covering normal cases,",
+          "startTime": 5.01504932735426,
+          "endTime": 8.51229596412556,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "edge cases,",
+          "startTime": 8.56229596412556,
+          "endTime": 9.412977578475337,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and error conditions.",
+          "startTime": 9.462977578475337,
+          "endTime": 11.164340807174888,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It generates integration tests for APIs and even UI tests for web applications.",
+          "startTime": 11.214340807174889,
+          "endTime": 17.45267264573991,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "What's impressive is that AI often thinks of test cases that I would miss.",
+          "startTime": 17.50267264573991,
+          "endTime": 23.17388340807175,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It considers boundary values,",
+          "startTime": 23.22388340807175,
+          "endTime": 25.586887892376684,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "null inputs,",
+          "startTime": 25.636887892376684,
+          "endTime": 26.58208968609866,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and unusual scenarios.",
+          "startTime": 26.63208968609866,
+          "endTime": 28.427973094170408,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I used to struggle with writing enough tests - now AI generates a comprehensive test suite,",
+          "startTime": 28.47797309417041,
+          "endTime": 35.56698654708521,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and I just review and customize it.",
+          "startTime": 35.616986547085205,
+          "endTime": 38.26355156950673,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Test coverage has improved dramatically on my projects.",
+          "startTime": 38.31355156950673,
+          "endTime": 42.756,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "image": "images/16.png",
+      "audio": "audios/16.mp3",
+      "audioDuration": 45.65,
+      "subtitleContent": "AI also makes test execution smarter. Instead of running all tests every time, AI identifies which tests are relevant to your changes and runs those first. It detects flaky tests that sometimes pass and sometimes fail, helping you fix unreliable tests. When tests fail, AI analyzes the failures and suggests probable causes. It even tracks testing trends over time, helping you identify areas where quality is improving or declining. This intelligence transforms testing from a manual chore into an automated quality assurance system.",
+      "subtitleTimeline": [
+        {
+          "text": "AI also makes test execution smarter.",
+          "startTime": 0,
+          "endTime": 3.2015565610859733,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Instead of running all tests every time,",
+          "startTime": 3.251556561085973,
+          "endTime": 6.659665158371041,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI identifies which tests are relevant to your changes and runs those first.",
+          "startTime": 6.709665158371041,
+          "endTime": 13.216054298642534,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It detects flaky tests that sometimes pass and sometimes fail,",
+          "startTime": 13.266054298642535,
+          "endTime": 18.636407239819007,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "helping you fix unreliable tests.",
+          "startTime": 18.686407239819008,
+          "endTime": 21.57813574660634,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "When tests fail,",
+          "startTime": 21.62813574660634,
+          "endTime": 22.97072398190046,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI analyzes the failures and suggests probable causes.",
+          "startTime": 23.02072398190046,
+          "endTime": 27.771420814479647,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It even tracks testing trends over time,",
+          "startTime": 27.821420814479648,
+          "endTime": 31.229529411764716,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "helping you identify areas where quality is improving or declining.",
+          "startTime": 31.279529411764717,
+          "endTime": 37.166262443438924,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "This intelligence transforms testing from a manual chore into an automated quality assurance system.",
+          "startTime": 37.21626244343892,
+          "endTime": 46.098000000000006,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "image": "images/17.png",
+      "audio": "audios/17.mp3",
+      "audioDuration": 48.92,
+      "subtitleContent": "Documentation is where AI really saves time. It generates code comments, API documentation, and even user guides automatically. For API documentation, it creates complete OpenAPI specifications from your code, including examples and error responses. For user guides, it can analyze your application flow and create step-by-step instructions. The documentation stays in sync with your code automatically. I used to spend 20% of my time writing documentation - now AI handles most of it, and I just review and refine. The quality is often better than what I would write manually because AI is more consistent and thorough.",
+      "subtitleTimeline": [
+        {
+          "text": "Documentation is where AI really saves time.",
+          "startTime": 0,
+          "endTime": 3.5424422700587086,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It generates code comments,",
+          "startTime": 3.5924422700587084,
+          "endTime": 5.7945009784735815,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "API documentation,",
+          "startTime": 5.844500978473581,
+          "endTime": 7.376367906066537,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and even user guides automatically.",
+          "startTime": 7.426367906066536,
+          "endTime": 10.298618395303327,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "For API documentation,",
+          "startTime": 10.348618395303328,
+          "endTime": 12.167710371819963,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "it creates complete OpenAPI specifications from your code,",
+          "startTime": 12.217710371819964,
+          "endTime": 17.004794520547946,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "including examples and error responses.",
+          "startTime": 17.054794520547947,
+          "endTime": 20.310011741682978,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "For user guides,",
+          "startTime": 20.36001174168298,
+          "endTime": 21.604653620352256,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "it can analyze your application flow and create step-by-step instructions.",
+          "startTime": 21.654653620352256,
+          "endTime": 27.782121330724078,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The documentation stays in sync with your code automatically.",
+          "startTime": 27.83212133072408,
+          "endTime": 32.81068884540118,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I used to spend 20% of my time writing documentation - now AI handles most of it,",
+          "startTime": 32.86068884540118,
+          "endTime": 38.988156555772996,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and I just review and refine.",
+          "startTime": 39.03815655577299,
+          "endTime": 41.24021526418787,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The quality is often better than what I would write manually because AI is more consistent and thorough.",
+          "startTime": 41.290215264187864,
+          "endTime": 49.524,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "image": "images/18.png",
+      "audio": "audios/18.mp3",
+      "audioDuration": 44.93,
+      "subtitleContent": "Let's be honest about both the benefits and challenges of AI-assisted development. The benefits are real - faster development, fewer bugs, better documentation, and more consistent code quality. Teams report 30-40% productivity improvements. But there are challenges too. AI suggestions aren't always correct, so you need strong review processes. There's a learning curve for the tools. And there's a risk of becoming too dependent on AI and losing fundamental skills. The key is finding the right balance - using AI to handle routine tasks while maintaining your core development abilities.",
+      "subtitleTimeline": [
+        {
+          "text": "Let's be honest about both the benefits and challenges of AI-assisted development.",
+          "startTime": 0,
+          "endTime": 6.418285714285714,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The benefits are real - faster development,",
+          "startTime": 6.468285714285714,
+          "endTime": 9.769118367346938,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "fewer bugs,",
+          "startTime": 9.819118367346938,
+          "endTime": 10.644326530612243,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "better documentation,",
+          "startTime": 10.694326530612244,
+          "endTime": 12.436432653061225,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "and more consistent code quality.",
+          "startTime": 12.486432653061225,
+          "endTime": 15.053746938775511,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Teams report 30-40% productivity improvements.",
+          "startTime": 15.103746938775512,
+          "endTime": 18.863028571428572,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "But there are challenges too.",
+          "startTime": 18.913028571428573,
+          "endTime": 21.11358367346939,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI suggestions aren't always correct,",
+          "startTime": 21.16358367346939,
+          "endTime": 24.097657142857145,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "so you need strong review processes.",
+          "startTime": 24.147657142857145,
+          "endTime": 26.898351020408164,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "There's a learning curve for the tools.",
+          "startTime": 26.948351020408165,
+          "endTime": 29.88242448979592,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "And there's a risk of becoming too dependent on AI and losing fundamental skills.",
+          "startTime": 29.93242448979592,
+          "endTime": 36.07564081632653,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The key is finding the right balance - using AI to handle routine tasks while maintaining your core development abilities.",
+          "startTime": 36.12564081632653,
+          "endTime": 45.478,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "image": "images/19.png",
+      "audio": "audios/19.mp3",
+      "audioDuration": 46.15,
+      "subtitleContent": "Here's what implementing AI tools actually looks like. It's not instant productivity gains - there's usually a 2-4 week learning period where productivity might actually decrease as people learn new workflows. Some team members adapt quickly, others need more time. You need to establish guidelines for when and how to use AI tools. The most successful implementations start small - pick one tool and one use case, learn it well, then expand. Don't try to adopt everything at once. Also, invest time in training - the teams that spend time learning how to use AI tools effectively see much better results.",
+      "subtitleTimeline": [
+        {
+          "text": "Here's what implementing AI tools actually looks like.",
+          "startTime": 0,
+          "endTime": 4.297554655870445,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "It's not instant productivity gains - there's usually a 2-4 week learning period where productivity might actually decrease as people learn new workflows.",
+          "startTime": 4.347554655870445,
+          "endTime": 16.586242914979756,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Some team members adapt quickly,",
+          "startTime": 16.636242914979757,
+          "endTime": 19.15872064777328,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "others need more time.",
+          "startTime": 19.20872064777328,
+          "endTime": 20.89037246963563,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "You need to establish guidelines for when and how to use AI tools.",
+          "startTime": 20.94037246963563,
+          "endTime": 25.8919028340081,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "The most successful implementations start small - pick one tool and one use case,",
+          "startTime": 25.9419028340081,
+          "endTime": 32.20138461538462,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "learn it well,",
+          "startTime": 32.251384615384616,
+          "endTime": 33.27906072874494,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "then expand.",
+          "startTime": 33.329060728744935,
+          "endTime": 34.263311740890686,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Don't try to adopt everything at once.",
+          "startTime": 34.31331174089068,
+          "endTime": 37.209489878542506,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Also,",
+          "startTime": 37.2594898785425,
+          "endTime": 37.6331902834008,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "invest time in training - the teams that spend time learning how to use AI tools effectively see much better results.",
+          "startTime": 37.6831902834008,
+          "endTime": 46.65199999999999,
+          "pauseAfter": 0.05
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "image": "images/20.png",
+      "audio": "audios/20.mp3",
+      "audioDuration": 53.6,
+      "subtitleContent": "So how do you get started? First, pick one AI tool and one specific use case. I recommend starting with Claude or GitHub Copilot for code generation - it's easy to learn and immediately useful. Try it on a small, non-critical project first. Spend time learning how to write good prompts. Track your results - measure how much time you save, how many bugs AI catches, things like that. Once you're comfortable with one tool, gradually add others. Remember, the goal isn't to use AI everywhere - it's to use AI where it adds the most value. And always maintain your fundamental development skills. AI is a powerful assistant, but you're still the developer making the important decisions.",
+      "subtitleTimeline": [
+        {
+          "text": "So how do you get started?",
+          "startTime": 0,
+          "endTime": 1.942173913043478,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "First,",
+          "startTime": 1.9921739130434781,
+          "endTime": 2.4777173913043478,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "pick one AI tool and one specific use case.",
+          "startTime": 2.5277173913043476,
+          "endTime": 5.82941304347826,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "I recommend starting with Claude or GitHub Copilot for code generation - it's easy to learn and immediately useful.",
+          "startTime": 5.87941304347826,
+          "endTime": 15.201847826086954,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Try it on a small,",
+          "startTime": 15.251847826086955,
+          "endTime": 16.514260869565216,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "non-critical project first.",
+          "startTime": 16.564260869565217,
+          "endTime": 18.89486956521739,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Spend time learning how to write good prompts.",
+          "startTime": 18.94486956521739,
+          "endTime": 22.635,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Track your results - measure how much time you save,",
+          "startTime": 22.685000000000002,
+          "endTime": 26.763565217391307,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "how many bugs AI catches,",
+          "startTime": 26.813565217391307,
+          "endTime": 28.755739130434787,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "things like that.",
+          "startTime": 28.805739130434787,
+          "endTime": 30.165260869565223,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Once you're comfortable with one tool,",
+          "startTime": 30.215260869565224,
+          "endTime": 33.32273913043479,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "gradually add others.",
+          "startTime": 33.37273913043479,
+          "endTime": 35.12069565217392,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "Remember,",
+          "startTime": 35.17069565217392,
+          "endTime": 35.94756521739131,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "the goal isn't to use AI everywhere - it's to use AI where it adds the most value.",
+          "startTime": 35.997565217391305,
+          "endTime": 42.21252173913044,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "And always maintain your fundamental development skills.",
+          "startTime": 42.262521739130435,
+          "endTime": 47.02084782608696,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "AI is a powerful assistant,",
+          "startTime": 47.070847826086954,
+          "endTime": 49.20723913043478,
+          "pauseAfter": 0.05
+        },
+        {
+          "text": "but you're still the developer making the important decisions.",
+          "startTime": 49.257239130434776,
+          "endTime": 54.403999999999996,
+          "pauseAfter": 0.05
+        }
+      ]
+    }
+  ]
+}
