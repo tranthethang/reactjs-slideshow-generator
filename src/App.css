@@ -185,6 +185,7 @@
 
 /* Debug Info */
 .debug-info {
+  display: none;
   position: fixed;
   bottom: 10px;
   left: 10px;
@@ -349,13 +350,13 @@
 
 .nav-button {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
   pointer-events: auto;
@@ -376,18 +377,18 @@
   transform: none !important;
 }
 
-/* Previous Button - Góc trái */
+/* Previous Button - 20px left of progress indicator */
 .prev-button {
-  top: 50%;
-  left: 30px;
-  transform: translateY(-50%);
+  bottom: 20px;
+  left: calc(50% - 250px);
+  transform: none;
 }
 
-/* Next Button - Góc phải */
+/* Next Button - 20px right of progress indicator */
 .next-button {
-  top: 50%;
-  right: 30px;
-  transform: translateY(-50%);
+  bottom: 20px;
+  right: calc(50% - 250px);
+  transform: none;
 }
 
 /* Play/Pause Button - Góc phải, trên cùng */
@@ -575,17 +576,17 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .nav-button {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
   
   .prev-button {
-    left: 15px;
+    left: calc(50% - 120px);
   }
   
   .next-button {
-    right: 15px;
+    right: calc(50% - 120px);
   }
   
   .play-pause-button {
@@ -644,9 +645,17 @@
 
 @media (max-width: 480px) {
   .nav-button {
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  
+  .prev-button {
+    left: calc(50% - 100px);
+  }
+  
+  .next-button {
+    right: calc(50% - 100px);
   }
   
   .subtitle-text {

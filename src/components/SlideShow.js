@@ -209,46 +209,65 @@ const SlideShow = ({ metadata }) => {
         </audio>
       )}
 
-      {/* Custom Play Button */}
+      {/* Modern Play Button */}
       {currentSlide?.audio && (
         <button
-          className="custom-play-button"
+          className="modern-play-button"
           onClick={toggleAudio}
           style={{
             position: 'absolute',
-            top: '20px',
-            right: '20px',
+            top: '30px',
+            right: '30px',
             zIndex: 100,
-            width: '30px', // Reduced by half from 60px
-            height: '30px', // Reduced by half from 60px
+            width: '56px',
+            height: '56px',
             borderRadius: '50%',
             border: 'none',
-            background: isPlaying ? '#0066FF' : '#FF0000', // Blue when playing, red when paused
+            background: isPlaying 
+              ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' 
+              : 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
             color: 'white',
-            fontSize: `${12 * beatScale}px`, // Reduced base size and apply beat scale
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             backdropFilter: 'blur(10px)',
-            transition: isPlaying ? 'background-color 0.3s ease' : 'all 0.3s ease',
-            transform: `scale(${beatScale})`, // Apply beat animation
-            boxShadow: isPlaying ? '0 0 15px rgba(0, 102, 255, 0.5)' : '0 0 10px rgba(255, 0, 0, 0.3)',
+            transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+            transform: `scale(${beatScale})`,
+            boxShadow: isPlaying 
+              ? '0 8px 32px rgba(102, 126, 234, 0.4), 0 4px 16px rgba(118, 75, 162, 0.3)' 
+              : '0 8px 32px rgba(240, 147, 251, 0.4), 0 4px 16px rgba(245, 87, 108, 0.3)',
+            filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15))',
           }}
           onMouseEnter={(e) => {
-            if (!isPlaying) {
-              e.target.style.background = '#CC0000';
-              e.target.style.transform = `scale(${beatScale * 1.1})`;
-            }
+            e.target.style.transform = `scale(${beatScale * 1.05})`;
+            e.target.style.filter = 'drop-shadow(0 4px 16px rgba(0, 0, 0, 0.25)) brightness(1.1)';
           }}
           onMouseLeave={(e) => {
-            if (!isPlaying) {
-              e.target.style.background = '#FF0000';
-              e.target.style.transform = `scale(${beatScale})`;
-            }
+            e.target.style.transform = `scale(${beatScale})`;
+            e.target.style.filter = 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15))';
           }}
         >
-          {isPlaying ? '⏸' : '▶'} {/* Using font icons instead of emojis */}
+          <svg 
+            width="20" 
+            height="20" 
+            viewBox="0 0 24 24" 
+            fill="currentColor"
+            style={{
+              marginLeft: isPlaying ? '0' : '2px', // Slight offset for play icon to appear centered
+            }}
+          >
+            {isPlaying ? (
+              // Pause icon
+              <g>
+                <rect x="6" y="4" width="4" height="16" rx="1"/>
+                <rect x="14" y="4" width="4" height="16" rx="1"/>
+              </g>
+            ) : (
+              // Play icon
+              <path d="M8 5v14l11-7z"/>
+            )}
+          </svg>
         </button>
       )}
       

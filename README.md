@@ -1,29 +1,29 @@
-# Slideshow App với Audio và Subtitle
+# Slideshow App with Audio and Subtitle
 
-Ứng dụng React slideshow hiển thị ảnh full-screen với audio và subtitle đồng bộ, không cần backend server.
+A React slideshow application that displays full-screen images with synchronized audio and subtitles, no backend server required.
 
-## Tính năng
+## Features
 
-- ✅ Hiển thị slideshow ảnh full-screen
-- ✅ Phát audio đồng bộ với từng slide
-- ✅ Subtitle tự động theo thời gian audio
+- ✅ Full-screen image slideshow display
+- ✅ Synchronized audio playback for each slide
+- ✅ Automatic subtitles based on audio timing
 - ✅ Keyboard shortcuts (Space, Arrow keys, Esc)
-- ✅ Touch gestures cho mobile (swipe)
+- ✅ Touch gestures for mobile (swipe)
 - ✅ Responsive design
-- ✅ Caching với LocalStorage
-- ✅ Auto-advance khi audio kết thúc
-- ✅ Progress indicator và thumbnails
+- ✅ LocalStorage caching
+- ✅ Auto-advance when audio ends
+- ✅ Progress indicator and thumbnails
 
-## Cấu trúc dự án
+## Project Structure
 
 ```
 slideshow-app/
 ├── public/
 │   ├── data/
 │   │   └── metadata.json (generated)
-│   ├── images/           # Ảnh slides (1.jpg, 2.jpg, ...)
-│   ├── audios/           # File audio (1.mp3, 2.mp3, ...)
-│   └── subtitles/        # File subtitle (1.txt, 2.txt, ...)
+│   ├── images/           # Slide images (1.jpg, 2.jpg, ...)
+│   ├── audios/           # Audio files (1.mp3, 2.mp3, ...)
+│   └── subtitles/        # Subtitle files (1.txt, 2.txt, ...)
 ├── scripts/
 │   └── generate-metadata.js
 ├── src/
@@ -35,24 +35,24 @@ slideshow-app/
 └── package.json
 ```
 
-## Cài đặt
+## Installation
 
-1. **Cài đặt dependencies:**
+1. **Install dependencies:**
 ```bash
 npm install
 ```
 
-2. **Chuẩn bị files:**
-   - Thêm ảnh vào `public/images/` (1.jpg, 2.jpg, ...)
-   - Thêm audio vào `public/audios/` (1.mp3, 2.mp3, ...)
-   - Thêm subtitle vào `public/subtitles/` (1.txt, 2.txt, ...)
+2. **Prepare files:**
+   - Add images to `public/images/` (1.jpg, 2.jpg, ...)
+   - Add audio to `public/audios/` (1.mp3, 2.mp3, ...)
+   - Add subtitles to `public/subtitles/` (1.txt, 2.txt, ...)
 
 3. **Generate metadata:**
 ```bash
 npm run generate-metadata
 ```
 
-4. **Chạy ứng dụng:**
+4. **Run the application:**
 ```bash
 npm start
 ```
@@ -60,29 +60,29 @@ npm start
 ## Keyboard Shortcuts
 
 - **Space**: Play/Pause
-- **Arrow Left**: Slide trước
-- **Arrow Right**: Slide tiếp theo  
-- **Escape**: Stop và reset
+- **Arrow Left**: Previous slide
+- **Arrow Right**: Next slide  
+- **Escape**: Stop and reset
 
 ## Touch Gestures (Mobile)
 
-- **Swipe Left**: Slide tiếp theo
-- **Swipe Right**: Slide trước
+- **Swipe Left**: Next slide
+- **Swipe Right**: Previous slide
 - **Tap**: Play/Pause
 
-## Logic Subtitle Timing
+## Subtitle Timing Logic
 
-Ứng dụng tự động tính toán thời gian hiển thị subtitle dựa trên:
+The application automatically calculates subtitle display timing based on:
 
-1. **Phân đoạn**: Tách text tại dấu câu (. , ! ? ; :)
-2. **Thời gian**: Tính theo số ký tự và độ dài audio
-3. **Nghỉ**: Dừng tại dấu câu (0.3-0.5 giây)
+1. **Segmentation**: Split text at punctuation marks (. , ! ? ; :)
+2. **Timing**: Calculate based on character count and audio duration
+3. **Pauses**: Pause at punctuation marks (0.3-0.5 seconds)
 
 ## Caching Strategy
 
-- Metadata được cache trong LocalStorage
-- Auto-check version mới khi load
-- Fallback về cache khi có lỗi network
+- Metadata is cached in LocalStorage
+- Auto-check for new version on load
+- Fallback to cache when network error occurs
 
 ## Build Production
 
@@ -90,31 +90,31 @@ npm start
 npm run build
 ```
 
-Deploy thư mục `build/` lên static hosting (Netlify, Vercel, v.v.)
+Deploy the `build/` folder to static hosting (Netlify, Vercel, etc.)
 
-## Scripts có sẵn
+## Available Scripts
 
-- `npm start`: Chạy development server
-- `npm run build`: Build production
-- `npm run generate-metadata`: Tạo metadata.json
-- `npm test`: Chạy tests
+- `npm start`: Run development server
+- `npm run build`: Build for production
+- `npm run generate-metadata`: Generate metadata.json
+- `npm test`: Run tests
 
 ## Troubleshooting
 
-**Lỗi "Không thể tải metadata":**
-1. Kiểm tra file `public/data/metadata.json` có tồn tại
-2. Chạy `npm run generate-metadata`
-3. Đảm bảo có đủ files tương ứng (image + audio + subtitle)
+**Error "Cannot load metadata":**
+1. Check if `public/data/metadata.json` file exists
+2. Run `npm run generate-metadata`
+3. Ensure all corresponding files exist (image + audio + subtitle)
 
-**Audio không phát:**
-1. Kiểm tra format audio (mp3, wav, ogg)
-2. Đảm bảo files không bị corrupt
-3. Kiểm tra browser có hỗ trợ audio format
+**Audio not playing:**
+1. Check audio format (mp3, wav, ogg)
+2. Ensure files are not corrupted
+3. Check if browser supports the audio format
 
-## Công nghệ sử dụng
+## Technologies Used
 
-- **React.js** với hooks
+- **React.js** with hooks
 - **HTML5 Audio API**
-- **LocalStorage** cho caching
-- **CSS3** cho animations
-- **get-audio-duration** cho xử lý audio metadata
+- **LocalStorage** for caching
+- **CSS3** for animations
+- **get-audio-duration** for audio metadata processing
