@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2025-07-25T10:00:26.995Z",
+  "generatedAt": "2025-07-26T10:38:50.019Z",
   "totalSlides": 20,
   "slides": [
     {
@@ -13,46 +13,62 @@
         {
           "text": "Good morning everyone.",
           "startTime": 0,
-          "endTime": 1.660867605633803,
-          "pauseAfter": 0.05
+          "endTime": 1.577,
+          "pauseAfter": 0.401,
+          "wordCount": 3,
+          "complexityScore": 0.1
         },
         {
           "text": "Today we're going to explore how AI is transforming software development.",
-          "startTime": 1.710867605633803,
-          "endTime": 7.130540845070423,
-          "pauseAfter": 0.05
+          "startTime": 1.978,
+          "endTime": 6.675,
+          "pauseAfter": 0.401,
+          "wordCount": 11,
+          "complexityScore": 0.11
         },
         {
           "text": "I'm Alex Tran,",
-          "startTime": 7.180540845070423,
-          "endTime": 8.142095774647888,
-          "pauseAfter": 0.05
+          "startTime": 7.076,
+          "endTime": 7.883,
+          "pauseAfter": 0.214,
+          "wordCount": 3,
+          "complexityScore": 0
         },
         {
           "text": "and I've been working with AI development tools for the past three months.",
-          "startTime": 8.192095774647889,
-          "endTime": 13.524354929577466,
-          "pauseAfter": 0.05
+          "startTime": 8.097,
+          "endTime": 12.654,
+          "pauseAfter": 0.401,
+          "wordCount": 13,
+          "complexityScore": 0.07
         },
         {
           "text": "We'll look at practical ways AI can help us in every stage of building software - from understanding what customers want to deploying the final product.",
-          "startTime": 13.574354929577467,
-          "endTime": 24.58852957746479,
-          "pauseAfter": 0.05
+          "startTime": 13.055,
+          "endTime": 22.499,
+          "pauseAfter": 0.401,
+          "wordCount": 26,
+          "complexityScore": 0.08
         },
         {
           "text": "This isn't about replacing developers,",
-          "startTime": 24.63852957746479,
-          "endTime": 27.523194366197185,
-          "pauseAfter": 0.05
+          "startTime": 22.9,
+          "endTime": 25.448,
+          "pauseAfter": 0.214,
+          "wordCount": 5,
+          "complexityScore": 0.18
         },
         {
           "text": "it's about making us more effective and productive.",
-          "startTime": 27.573194366197185,
-          "endTime": 31.332,
-          "pauseAfter": 0.05
+          "startTime": 25.662,
+          "endTime": 29.081,
+          "pauseAfter": 0.401,
+          "wordCount": 8,
+          "complexityScore": 0.11
         }
-      ]
+      ],
+      "srtFile": "srt/1.srt",
+      "vttFile": "vtt/1.vtt"
     },
     {
       "id": 2,
@@ -64,70 +80,94 @@
         {
           "text": "Here's what we'll cover today.",
           "startTime": 0,
-          "endTime": 2.197518610421836,
-          "pauseAfter": 0.05
+          "endTime": 1.973,
+          "pauseAfter": 0.44,
+          "wordCount": 5,
+          "complexityScore": 0
         },
         {
           "text": "First,",
-          "startTime": 2.2475186104218356,
-          "endTime": 2.687022332506203,
-          "pauseAfter": 0.05
+          "startTime": 2.413,
+          "endTime": 2.772,
+          "pauseAfter": 0.234,
+          "wordCount": 1,
+          "complexityScore": 0
         },
         {
           "text": "we'll talk about why AI matters in software development right now.",
-          "startTime": 2.7370223325062026,
-          "endTime": 7.571563275434242,
-          "pauseAfter": 0.05
+          "startTime": 3.006,
+          "endTime": 7.043,
+          "pauseAfter": 0.44,
+          "wordCount": 11,
+          "complexityScore": 0.08
         },
         {
           "text": "Then we'll walk through each phase of the software development lifecycle and see exactly how AI tools can help.",
-          "startTime": 7.621563275434242,
-          "endTime": 15.7084317617866,
-          "pauseAfter": 0.05
+          "startTime": 7.483,
+          "endTime": 14.233,
+          "pauseAfter": 0.44,
+          "wordCount": 19,
+          "complexityScore": 0.08
         },
         {
           "text": "I'll show you real examples and demos.",
-          "startTime": 15.7584317617866,
-          "endTime": 18.483354838709676,
-          "pauseAfter": 0.05
+          "startTime": 14.673,
+          "endTime": 16.916,
+          "pauseAfter": 0.44,
+          "wordCount": 7,
+          "complexityScore": 0.03
         },
         {
           "text": "After that,",
-          "startTime": 18.533354838709677,
-          "endTime": 19.324461538461538,
-          "pauseAfter": 0.05
+          "startTime": 17.356,
+          "endTime": 18.001,
+          "pauseAfter": 0.234,
+          "wordCount": 2,
+          "complexityScore": 0
         },
         {
           "text": "we'll discuss what I've learned from actually using these tools in projects.",
-          "startTime": 19.37446153846154,
-          "endTime": 25.00010918114144,
-          "pauseAfter": 0.05
+          "startTime": 18.235,
+          "endTime": 22.883,
+          "pauseAfter": 0.44,
+          "wordCount": 12,
+          "complexityScore": 0.04
         },
         {
           "text": "Finally,",
-          "startTime": 25.05010918114144,
-          "endTime": 25.665414392059553,
-          "pauseAfter": 0.05
+          "startTime": 23.323,
+          "endTime": 23.856,
+          "pauseAfter": 0.234,
+          "wordCount": 1,
+          "complexityScore": 0.2
         },
         {
           "text": "we'll talk about how you can start using AI in your own work.",
-          "startTime": 25.715414392059554,
-          "endTime": 29.934650124069478,
-          "pauseAfter": 0.05
+          "startTime": 24.09,
+          "endTime": 27.533,
+          "pauseAfter": 0.44,
+          "wordCount": 13,
+          "complexityScore": 0
         },
         {
           "text": "The whole session should take about 40 minutes,",
-          "startTime": 29.98465012406948,
-          "endTime": 33.412779156327545,
-          "pauseAfter": 0.05
+          "startTime": 27.973,
+          "endTime": 30.828,
+          "pauseAfter": 0.234,
+          "wordCount": 8,
+          "complexityScore": 0.07
         },
         {
           "text": "with time for questions at the end.",
-          "startTime": 33.46277915632754,
-          "endTime": 35.924,
-          "pauseAfter": 0.05
+          "startTime": 31.062,
+          "endTime": 33.212,
+          "pauseAfter": 0.44,
+          "wordCount": 7,
+          "complexityScore": 0.06
         }
-      ]
+      ],
+      "srtFile": "srt/2.srt",
+      "vttFile": "vtt/2.vtt"
     },
     {
       "id": 3,
@@ -139,76 +179,102 @@
         {
           "text": "Let's start with why we need AI in development.",
           "startTime": 0,
-          "endTime": 3.3368470588235293,
-          "pauseAfter": 0.05
+          "endTime": 2.941,
+          "pauseAfter": 0.545,
+          "wordCount": 9,
+          "complexityScore": 0.07
         },
         {
           "text": "We all face these challenges every day.",
-          "startTime": 3.386847058823529,
-          "endTime": 6.196823529411764,
-          "pauseAfter": 0.05
+          "startTime": 3.486,
+          "endTime": 5.736,
+          "pauseAfter": 0.545,
+          "wordCount": 7,
+          "complexityScore": 0.07
         },
         {
           "text": "Requirements from clients are often unclear or keep changing.",
-          "startTime": 6.246823529411764,
-          "endTime": 10.813035294117647,
-          "pauseAfter": 0.05
+          "startTime": 6.281,
+          "endTime": 9.974,
+          "pauseAfter": 0.545,
+          "wordCount": 9,
+          "complexityScore": 0.11
         },
         {
           "text": "We spend hours debugging code and reviewing each other's work.",
-          "startTime": 10.863035294117648,
-          "endTime": 15.429247058823531,
-          "pauseAfter": 0.05
+          "startTime": 10.519,
+          "endTime": 14.196,
+          "pauseAfter": 0.545,
+          "wordCount": 10,
+          "complexityScore": 0.09
         },
         {
           "text": "Writing documentation is tedious but necessary.",
-          "startTime": 15.479247058823532,
-          "endTime": 19.079529411764707,
-          "pauseAfter": 0.05
+          "startTime": 14.741,
+          "endTime": 17.776,
+          "pauseAfter": 0.545,
+          "wordCount": 6,
+          "complexityScore": 0.25
         },
         {
           "text": "These aren't new problems,",
-          "startTime": 19.129529411764707,
-          "endTime": 21.061388235294118,
-          "pauseAfter": 0.05
+          "startTime": 18.321,
+          "endTime": 19.847,
+          "pauseAfter": 0.29,
+          "wordCount": 4,
+          "complexityScore": 0.03
         },
         {
           "text": "but AI gives us new ways to handle them.",
-          "startTime": 21.11138823529412,
-          "endTime": 23.83355294117647,
-          "pauseAfter": 0.05
+          "startTime": 20.137,
+          "endTime": 22.279,
+          "pauseAfter": 0.545,
+          "wordCount": 9,
+          "complexityScore": 0.01
         },
         {
           "text": "AI can help us understand requirements better,",
-          "startTime": 23.88355294117647,
-          "endTime": 27.308211764705884,
-          "pauseAfter": 0.05
+          "startTime": 22.824,
+          "endTime": 25.641,
+          "pauseAfter": 0.29,
+          "wordCount": 7,
+          "complexityScore": 0.16
         },
         {
           "text": "catch bugs earlier,",
-          "startTime": 27.358211764705885,
-          "endTime": 28.7632,
-          "pauseAfter": 0.05
+          "startTime": 25.931,
+          "endTime": 27.044,
+          "pauseAfter": 0.29,
+          "wordCount": 3,
+          "complexityScore": 0.03
         },
         {
           "text": "generate documentation automatically,",
-          "startTime": 28.813200000000002,
-          "endTime": 31.7988,
-          "pauseAfter": 0.05
+          "startTime": 27.334,
+          "endTime": 29.991,
+          "pauseAfter": 0.29,
+          "wordCount": 3,
+          "complexityScore": 0.45
         },
         {
           "text": "and make code reviews more efficient.",
-          "startTime": 31.8488,
-          "endTime": 34.57096470588235,
-          "pauseAfter": 0.05
+          "startTime": 30.281,
+          "endTime": 32.469,
+          "pauseAfter": 0.545,
+          "wordCount": 6,
+          "complexityScore": 0.08
         },
         {
           "text": "The goal isn't to replace our thinking - it's to handle the repetitive stuff so we can focus on the creative problem-solving that we actually enjoy.",
-          "startTime": 34.62096470588235,
-          "endTime": 45.333999999999996,
-          "pauseAfter": 0.05
+          "startTime": 33.014,
+          "endTime": 41.997,
+          "pauseAfter": 0.545,
+          "wordCount": 26,
+          "complexityScore": 0.06
         }
-      ]
+      ],
+      "srtFile": "srt/3.srt",
+      "vttFile": "vtt/3.vtt"
     },
     {
       "id": 4,
@@ -220,88 +286,118 @@
         {
           "text": "Let's start with requirements gathering.",
           "startTime": 0,
-          "endTime": 3.366150627615063,
-          "pauseAfter": 0.05
+          "endTime": 3.044,
+          "pauseAfter": 0.559,
+          "wordCount": 5,
+          "complexityScore": 0.21
         },
         {
           "text": "Usually,",
-          "startTime": 3.4161506276150626,
-          "endTime": 4.089380753138075,
-          "pauseAfter": 0.05
+          "startTime": 3.603,
+          "endTime": 4.154,
+          "pauseAfter": 0.298,
+          "wordCount": 1,
+          "complexityScore": 0.2
         },
         {
           "text": "we get requirements in messy formats - long emails,",
-          "startTime": 4.139380753138075,
-          "endTime": 8.17876150627615,
-          "pauseAfter": 0.05
+          "startTime": 4.452,
+          "endTime": 7.664,
+          "pauseAfter": 0.298,
+          "wordCount": 9,
+          "complexityScore": 0.09
         },
         {
           "text": "PDF documents,",
-          "startTime": 8.22876150627615,
-          "endTime": 9.382870292887029,
-          "pauseAfter": 0.05
+          "startTime": 7.962,
+          "endTime": 8.928,
+          "pauseAfter": 0.298,
+          "wordCount": 2,
+          "complexityScore": 0.28
         },
         {
           "text": "meeting notes.",
-          "startTime": 9.43287029288703,
-          "endTime": 10.586979079497908,
-          "pauseAfter": 0.05
+          "startTime": 9.226,
+          "endTime": 10.132,
+          "pauseAfter": 0.559,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "AI can process all this text and extract the actual requirements.",
-          "startTime": 10.636979079497909,
-          "endTime": 15.830468619246863,
-          "pauseAfter": 0.05
+          "startTime": 10.691,
+          "endTime": 14.812,
+          "pauseAfter": 0.559,
+          "wordCount": 11,
+          "complexityScore": 0.09
         },
         {
           "text": "For example,",
-          "startTime": 15.880468619246864,
-          "endTime": 16.842225941422598,
-          "pauseAfter": 0.05
+          "startTime": 15.371,
+          "endTime": 16.125,
+          "pauseAfter": 0.298,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "I can upload a 10-page requirements document,",
-          "startTime": 16.8922259414226,
-          "endTime": 20.54690376569038,
-          "pauseAfter": 0.05
+          "startTime": 16.423,
+          "endTime": 19.383,
+          "pauseAfter": 0.298,
+          "wordCount": 7,
+          "complexityScore": 0.16
         },
         {
           "text": "and AI will identify all the functional requirements,",
-          "startTime": 20.59690376569038,
-          "endTime": 24.924811715481177,
-          "pauseAfter": 0.05
+          "startTime": 19.681,
+          "endTime": 23.216,
+          "pauseAfter": 0.298,
+          "wordCount": 8,
+          "complexityScore": 0.19
         },
         {
           "text": "non-functional requirements,",
-          "startTime": 24.974811715481177,
-          "endTime": 27.475380753138083,
-          "pauseAfter": 0.05
+          "startTime": 23.514,
+          "endTime": 25.825,
+          "pauseAfter": 0.298,
+          "wordCount": 2,
+          "complexityScore": 0.65
         },
         {
           "text": "and even spot potential conflicts.",
-          "startTime": 27.525380753138084,
-          "endTime": 30.31447698744771,
-          "pauseAfter": 0.05
+          "startTime": 26.123,
+          "endTime": 28.37,
+          "pauseAfter": 0.559,
+          "wordCount": 5,
+          "complexityScore": 0.14
         },
         {
           "text": "It saves hours of manual reading and note-taking.",
-          "startTime": 30.36447698744771,
-          "endTime": 34.30768200836821,
-          "pauseAfter": 0.05
+          "startTime": 28.929,
+          "endTime": 32.059,
+          "pauseAfter": 0.559,
+          "wordCount": 8,
+          "complexityScore": 0.09
         },
         {
           "text": "The AI doesn't just copy text - it understands context and organizes information logically.",
-          "startTime": 34.35768200836821,
-          "endTime": 41.76321338912135,
-          "pauseAfter": 0.05
+          "startTime": 32.618,
+          "endTime": 38.622,
+          "pauseAfter": 0.559,
+          "wordCount": 14,
+          "complexityScore": 0.16
         },
         {
           "text": "This gives us a much cleaner starting point for our projects.",
-          "startTime": 41.813213389121344,
-          "endTime": 46.62200000000001,
-          "pauseAfter": 0.05
+          "startTime": 39.181,
+          "endTime": 43.118,
+          "pauseAfter": 0.559,
+          "wordCount": 11,
+          "complexityScore": 0.03
         }
-      ]
+      ],
+      "srtFile": "srt/4.srt",
+      "vttFile": "vtt/4.vtt"
     },
     {
       "id": 5,
@@ -313,88 +409,118 @@
         {
           "text": "Even better than analyzing documents is using AI chatbots to gather requirements directly.",
           "startTime": 0,
-          "endTime": 5.127195652173913,
-          "pauseAfter": 0.05
+          "endTime": 4.63,
+          "pauseAfter": 0.445,
+          "wordCount": 13,
+          "complexityScore": 0.17
         },
         {
           "text": "Instead of sending clients long forms to fill out,",
-          "startTime": 5.177195652173912,
-          "endTime": 7.907260869565217,
-          "pauseAfter": 0.05
+          "startTime": 5.075,
+          "endTime": 7.23,
+          "pauseAfter": 0.237,
+          "wordCount": 9,
+          "complexityScore": 0.03
         },
         {
           "text": "we can have them talk to an AI bot in natural language.",
-          "startTime": 7.957260869565217,
-          "endTime": 10.8205,
-          "pauseAfter": 0.05
+          "startTime": 7.467,
+          "endTime": 9.721,
+          "pauseAfter": 0.445,
+          "wordCount": 12,
+          "complexityScore": 0.03
         },
         {
           "text": "The bot asks smart follow-up questions based on what the client says.",
-          "startTime": 10.8705,
-          "endTime": 14.66595652173913,
-          "pauseAfter": 0.05
+          "startTime": 10.166,
+          "endTime": 13.187,
+          "pauseAfter": 0.445,
+          "wordCount": 12,
+          "complexityScore": 0.06
         },
         {
           "text": "For example,",
-          "startTime": 14.71595652173913,
-          "endTime": 15.381826086956522,
-          "pauseAfter": 0.05
+          "startTime": 13.632,
+          "endTime": 14.16,
+          "pauseAfter": 0.237,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "if a client says 'I need an e-commerce website,",
-          "startTime": 15.431826086956523,
-          "endTime": 17.96213043478261,
-          "pauseAfter": 0.05
+          "startTime": 14.397,
+          "endTime": 16.413,
+          "pauseAfter": 0.237,
+          "wordCount": 9,
+          "complexityScore": 0.07
         },
         {
           "text": "' the bot automatically asks about payment methods,",
-          "startTime": 18.01213043478261,
-          "endTime": 20.87536956521739,
-          "pauseAfter": 0.05
+          "startTime": 16.65,
+          "endTime": 18.958,
+          "pauseAfter": 0.237,
+          "wordCount": 8,
+          "complexityScore": 0.11
         },
         {
           "text": "shipping,",
-          "startTime": 20.92536956521739,
-          "endTime": 21.458065217391304,
-          "pauseAfter": 0.05
+          "startTime": 19.195,
+          "endTime": 19.623,
+          "pauseAfter": 0.237,
+          "wordCount": 1,
+          "complexityScore": 0.1
         },
         {
           "text": "inventory management,",
-          "startTime": 21.508065217391305,
-          "endTime": 22.77321739130435,
-          "pauseAfter": 0.05
+          "startTime": 19.86,
+          "endTime": 21.019,
+          "pauseAfter": 0.237,
+          "wordCount": 2,
+          "complexityScore": 0.57
         },
         {
           "text": "and so on.",
-          "startTime": 22.82321739130435,
-          "endTime": 23.289326086956525,
-          "pauseAfter": 0.05
+          "startTime": 21.256,
+          "endTime": 21.62,
+          "pauseAfter": 0.445,
+          "wordCount": 3,
+          "complexityScore": 0
         },
         {
           "text": "At the end of the conversation,",
-          "startTime": 23.339326086956525,
-          "endTime": 25.004000000000005,
-          "pauseAfter": 0.05
+          "startTime": 22.065,
+          "endTime": 23.408,
+          "pauseAfter": 0.237,
+          "wordCount": 6,
+          "complexityScore": 0.11
         },
         {
           "text": "we get a structured requirements document.",
-          "startTime": 25.054000000000006,
-          "endTime": 27.451130434782613,
-          "pauseAfter": 0.05
+          "startTime": 23.645,
+          "endTime": 25.649,
+          "pauseAfter": 0.445,
+          "wordCount": 6,
+          "complexityScore": 0.23
         },
         {
           "text": "I've used this approach with three clients this year,",
-          "startTime": 27.501130434782613,
-          "endTime": 30.430956521739134,
-          "pauseAfter": 0.05
+          "startTime": 26.094,
+          "endTime": 28.398,
+          "pauseAfter": 0.237,
+          "wordCount": 9,
+          "complexityScore": 0.02
         },
         {
           "text": "and it's amazing how much clearer the requirements become when clients can just talk naturally instead of filling out forms.",
-          "startTime": 30.480956521739135,
-          "endTime": 37.406000000000006,
-          "pauseAfter": 0.05
+          "startTime": 28.635,
+          "endTime": 34.473,
+          "pauseAfter": 0.445,
+          "wordCount": 20,
+          "complexityScore": 0.09
         }
-      ]
+      ],
+      "srtFile": "srt/5.srt",
+      "vttFile": "vtt/5.vtt"
     },
     {
       "id": 6,
@@ -406,82 +532,110 @@
         {
           "text": "AI also helps us turn vague requirements into clear,",
           "startTime": 0,
-          "endTime": 4.064270916334661,
-          "pauseAfter": 0.05
+          "endTime": 3.605,
+          "pauseAfter": 0.308,
+          "wordCount": 9,
+          "complexityScore": 0.07
         },
         {
           "text": "actionable user stories.",
-          "startTime": 4.114270916334661,
-          "endTime": 6.099147410358565,
-          "pauseAfter": 0.05
+          "startTime": 3.913,
+          "endTime": 5.581,
+          "pauseAfter": 0.576,
+          "wordCount": 3,
+          "complexityScore": 0.22
         },
         {
           "text": "Let's say a client says 'Users should be able to log in.",
-          "startTime": 6.149147410358565,
-          "endTime": 10.307936254980078,
-          "pauseAfter": 0.05
+          "startTime": 6.157,
+          "endTime": 9.455,
+          "pauseAfter": 0.576,
+          "wordCount": 12,
+          "complexityScore": 0.02
         },
         {
           "text": "' That's pretty vague,",
-          "startTime": 10.357936254980078,
-          "endTime": 12.059258964143424,
-          "pauseAfter": 0.05
+          "startTime": 10.031,
+          "endTime": 11.384,
+          "pauseAfter": 0.308,
+          "wordCount": 4,
+          "complexityScore": 0.03
         },
         {
           "text": "right?",
-          "startTime": 12.109258964143425,
-          "endTime": 12.581848605577688,
-          "pauseAfter": 0.05
+          "startTime": 11.692,
+          "endTime": 12.064,
+          "pauseAfter": 0.461,
+          "wordCount": 1,
+          "complexityScore": 0
         },
         {
           "text": "AI can automatically generate clarifying questions like:",
-          "startTime": 12.631848605577689,
-          "endTime": 17.263227091633468,
-          "pauseAfter": 0.05
+          "startTime": 12.525,
+          "endTime": 16.423,
+          "pauseAfter": 0.384,
+          "wordCount": 7,
+          "complexityScore": 0.22
         },
         {
           "text": "'Should users log in with email or username?",
-          "startTime": 17.31322709163347,
-          "endTime": 20.71587250996016,
-          "pauseAfter": 0.05
+          "startTime": 16.807,
+          "endTime": 19.523,
+          "pauseAfter": 0.461,
+          "wordCount": 8,
+          "complexityScore": 0.04
         },
         {
           "text": "Do you need social login options?",
-          "startTime": 20.76587250996016,
-          "endTime": 23.317856573705182,
-          "pauseAfter": 0.05
+          "startTime": 19.984,
+          "endTime": 22.033,
+          "pauseAfter": 0.461,
+          "wordCount": 6,
+          "complexityScore": 0.06
         },
         {
           "text": "How long should sessions last?",
-          "startTime": 23.367856573705183,
-          "endTime": 25.730804780876497,
-          "pauseAfter": 0.05
+          "startTime": 22.494,
+          "endTime": 24.399,
+          "pauseAfter": 0.461,
+          "wordCount": 5,
+          "complexityScore": 0.07
         },
         {
           "text": "' Then it converts the final requirement into proper user stories with acceptance criteria.",
-          "startTime": 25.780804780876498,
-          "endTime": 33.05868525896415,
-          "pauseAfter": 0.05
+          "startTime": 24.86,
+          "endTime": 30.795,
+          "pauseAfter": 0.576,
+          "wordCount": 14,
+          "complexityScore": 0.11
         },
         {
           "text": "This used to take me hours of back-and-forth emails with clients.",
-          "startTime": 33.108685258964144,
-          "endTime": 38.212653386454186,
-          "pauseAfter": 0.05
+          "startTime": 31.371,
+          "endTime": 35.465,
+          "pauseAfter": 0.576,
+          "wordCount": 11,
+          "complexityScore": 0.05
         },
         {
           "text": "Now it happens in minutes,",
-          "startTime": 38.26265338645418,
-          "endTime": 40.24752988047808,
-          "pauseAfter": 0.05
+          "startTime": 36.041,
+          "endTime": 37.636,
+          "pauseAfter": 0.308,
+          "wordCount": 5,
+          "complexityScore": 0.06
         },
         {
           "text": "and the quality is actually better because AI remembers to ask about edge cases that I might forget.",
-          "startTime": 40.29752988047808,
-          "endTime": 48.047999999999995,
-          "pauseAfter": 0.05
+          "startTime": 37.944,
+          "endTime": 44.5,
+          "pauseAfter": 0.576,
+          "wordCount": 18,
+          "complexityScore": 0.07
         }
-      ]
+      ],
+      "srtFile": "srt/6.srt",
+      "vttFile": "vtt/6.vtt"
     },
     {
       "id": 7,
@@ -493,94 +647,126 @@
         {
           "text": "Once we have clear requirements,",
           "startTime": 0,
-          "endTime": 2.5627153846153847,
-          "pauseAfter": 0.05
+          "endTime": 2.273,
+          "pauseAfter": 0.318,
+          "wordCount": 5,
+          "complexityScore": 0.13
         },
         {
           "text": "AI helps break them down into manageable tasks.",
-          "startTime": 2.6127153846153846,
-          "endTime": 6.314415384615385,
-          "pauseAfter": 0.05
+          "startTime": 2.591,
+          "endTime": 5.508,
+          "pauseAfter": 0.597,
+          "wordCount": 8,
+          "complexityScore": 0.05
         },
         {
           "text": "You give it a high-level feature,",
-          "startTime": 6.364415384615385,
-          "endTime": 8.92713076923077,
-          "pauseAfter": 0.05
+          "startTime": 6.105,
+          "endTime": 8.145,
+          "pauseAfter": 0.318,
+          "wordCount": 6,
+          "complexityScore": 0.08
         },
         {
           "text": "and it creates a complete breakdown structure.",
-          "startTime": 8.97713076923077,
-          "endTime": 12.678830769230771,
-          "pauseAfter": 0.05
+          "startTime": 8.463,
+          "endTime": 11.435,
+          "pauseAfter": 0.597,
+          "wordCount": 7,
+          "complexityScore": 0.11
         },
         {
           "text": "For example,",
-          "startTime": 12.728830769230772,
-          "endTime": 13.677984615384618,
-          "pauseAfter": 0.05
+          "startTime": 12.032,
+          "endTime": 12.78,
+          "pauseAfter": 0.318,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "'User Management' becomes registration,",
-          "startTime": 13.727984615384619,
-          "endTime": 17.050023076923082,
-          "pauseAfter": 0.05
+          "startTime": 13.098,
+          "endTime": 15.967,
+          "pauseAfter": 0.318,
+          "wordCount": 4,
+          "complexityScore": 0.37
         },
         {
           "text": "login,",
-          "startTime": 17.100023076923083,
-          "endTime": 17.574600000000007,
-          "pauseAfter": 0.05
+          "startTime": 16.285,
+          "endTime": 16.653,
+          "pauseAfter": 0.318,
+          "wordCount": 1,
+          "complexityScore": 0
         },
         {
           "text": "profile management,",
-          "startTime": 17.624600000000008,
-          "endTime": 19.238161538461547,
-          "pauseAfter": 0.05
+          "startTime": 16.971,
+          "endTime": 18.364,
+          "pauseAfter": 0.318,
+          "wordCount": 2,
+          "complexityScore": 0.38
         },
         {
           "text": "password reset,",
-          "startTime": 19.288161538461548,
-          "endTime": 20.52206153846155,
-          "pauseAfter": 0.05
+          "startTime": 18.682,
+          "endTime": 19.654,
+          "pauseAfter": 0.318,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "and so on.",
-          "startTime": 20.57206153846155,
-          "endTime": 21.23646923076924,
-          "pauseAfter": 0.05
+          "startTime": 19.972,
+          "endTime": 20.488,
+          "pauseAfter": 0.597,
+          "wordCount": 3,
+          "complexityScore": 0
         },
         {
           "text": "Each of these gets broken down further into specific development tasks.",
-          "startTime": 21.286469230769242,
-          "endTime": 26.981392307692317,
-          "pauseAfter": 0.05
+          "startTime": 21.085,
+          "endTime": 25.633,
+          "pauseAfter": 0.597,
+          "wordCount": 11,
+          "complexityScore": 0.1
         },
         {
           "text": "AI also estimates how complex each task is and identifies dependencies.",
-          "startTime": 27.031392307692318,
-          "endTime": 32.7263153846154,
-          "pauseAfter": 0.05
+          "startTime": 26.23,
+          "endTime": 30.844,
+          "pauseAfter": 0.597,
+          "wordCount": 11,
+          "complexityScore": 0.15
         },
         {
           "text": "It's like having an experienced project manager helping you plan.",
-          "startTime": 32.776315384615394,
-          "endTime": 37.99666153846155,
-          "pauseAfter": 0.05
+          "startTime": 31.441,
+          "endTime": 35.615,
+          "pauseAfter": 0.597,
+          "wordCount": 10,
+          "complexityScore": 0.1
         },
         {
           "text": "I've found that AI-generated breakdowns are often more thorough than what I would create manually,",
-          "startTime": 38.04666153846155,
-          "endTime": 45.92463846153847,
-          "pauseAfter": 0.05
+          "startTime": 36.212,
+          "endTime": 42.474,
+          "pauseAfter": 0.318,
+          "wordCount": 15,
+          "complexityScore": 0.08
         },
         {
           "text": "especially for features outside my main expertise.",
-          "startTime": 45.97463846153847,
-          "endTime": 50.056000000000004,
-          "pauseAfter": 0.05
+          "startTime": 42.792,
+          "endTime": 46.29,
+          "pauseAfter": 0.597,
+          "wordCount": 7,
+          "complexityScore": 0.17
         }
-      ]
+      ],
+      "srtFile": "srt/7.srt",
+      "vttFile": "vtt/7.vtt"
     },
     {
       "id": 8,
@@ -592,64 +778,86 @@
         {
           "text": "AI also optimizes project timelines.",
           "startTime": 0,
-          "endTime": 2.9483513513513517,
-          "pauseAfter": 0.05
+          "endTime": 2.804,
+          "pauseAfter": 0.529,
+          "wordCount": 5,
+          "complexityScore": 0.22
         },
         {
           "text": "It identifies which tasks can run in parallel,",
-          "startTime": 2.9983513513513516,
-          "endTime": 6.61245945945946,
-          "pauseAfter": 0.05
+          "startTime": 3.333,
+          "endTime": 6.341,
+          "pauseAfter": 0.283,
+          "wordCount": 8,
+          "complexityScore": 0.09
         },
         {
           "text": "suggests the best sequence for development,",
-          "startTime": 6.66245945945946,
-          "endTime": 10.181459459459461,
-          "pauseAfter": 0.05
+          "startTime": 6.624,
+          "endTime": 9.599,
+          "pauseAfter": 0.283,
+          "wordCount": 6,
+          "complexityScore": 0.14
         },
         {
           "text": "and even flags potential bottlenecks.",
-          "startTime": 10.231459459459462,
-          "endTime": 13.274918918918921,
-          "pauseAfter": 0.05
+          "startTime": 9.882,
+          "endTime": 12.468,
+          "pauseAfter": 0.529,
+          "wordCount": 5,
+          "complexityScore": 0.16
         },
         {
           "text": "For instance,",
-          "startTime": 13.324918918918922,
-          "endTime": 14.37110810810811,
-          "pauseAfter": 0.05
+          "startTime": 12.997,
+          "endTime": 13.858,
+          "pauseAfter": 0.283,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "it might suggest starting API design early so frontend and backend teams can work simultaneously.",
-          "startTime": 14.421108108108111,
-          "endTime": 22.219972972972975,
-          "pauseAfter": 0.05
+          "startTime": 14.141,
+          "endTime": 20.611,
+          "pauseAfter": 0.529,
+          "wordCount": 15,
+          "complexityScore": 0.08
         },
         {
           "text": "Or it might warn that integrating with a third-party payment system could cause delays,",
-          "startTime": 22.269972972972976,
-          "endTime": 29.21286486486487,
-          "pauseAfter": 0.05
+          "startTime": 21.14,
+          "endTime": 26.934,
+          "pauseAfter": 0.283,
+          "wordCount": 14,
+          "complexityScore": 0.1
         },
         {
           "text": "so we should start that early.",
-          "startTime": 29.26286486486487,
-          "endTime": 31.545459459459465,
-          "pauseAfter": 0.05
+          "startTime": 27.217,
+          "endTime": 29.077,
+          "pauseAfter": 0.529,
+          "wordCount": 6,
+          "complexityScore": 0.02
         },
         {
           "text": "This kind of planning used to require experienced project managers.",
-          "startTime": 31.595459459459466,
-          "endTime": 37.01662162162163,
-          "pauseAfter": 0.05
+          "startTime": 29.606,
+          "endTime": 34.135,
+          "pauseAfter": 0.529,
+          "wordCount": 10,
+          "complexityScore": 0.1
         },
         {
           "text": "Now AI gives every developer access to this kind of strategic thinking.",
-          "startTime": 37.06662162162163,
-          "endTime": 42.678000000000004,
-          "pauseAfter": 0.05
+          "startTime": 34.664,
+          "endTime": 39.586,
+          "pauseAfter": 0.529,
+          "wordCount": 12,
+          "complexityScore": 0.1
         }
-      ]
+      ],
+      "srtFile": "srt/8.srt",
+      "vttFile": "vtt/8.vtt"
     },
     {
       "id": 9,
@@ -661,88 +869,118 @@
         {
           "text": "Now let's talk about the most visible use of AI in development - code generation.",
           "startTime": 0,
-          "endTime": 5.831571428571428,
-          "pauseAfter": 0.05
+          "endTime": 5.151,
+          "pauseAfter": 0.536,
+          "wordCount": 15,
+          "complexityScore": 0.09
         },
         {
           "text": "GitHub Copilot is probably the most popular tool for this.",
-          "startTime": 5.881571428571428,
-          "endTime": 10.122714285714284,
-          "pauseAfter": 0.05
+          "startTime": 5.687,
+          "endTime": 9.07,
+          "pauseAfter": 0.536,
+          "wordCount": 10,
+          "complexityScore": 0.07
         },
         {
           "text": "You write a comment describing what you want,",
-          "startTime": 10.172714285714285,
-          "endTime": 13.441928571428571,
-          "pauseAfter": 0.05
+          "startTime": 9.606,
+          "endTime": 12.222,
+          "pauseAfter": 0.286,
+          "wordCount": 8,
+          "complexityScore": 0.08
         },
         {
           "text": "and it generates the code.",
-          "startTime": 13.491928571428572,
-          "endTime": 15.347428571428571,
-          "pauseAfter": 0.05
+          "startTime": 12.508,
+          "endTime": 14.001,
+          "pauseAfter": 0.536,
+          "wordCount": 5,
+          "complexityScore": 0.1
         },
         {
           "text": "But it's smarter than simple templates.",
-          "startTime": 15.397428571428572,
-          "endTime": 18.313214285714285,
-          "pauseAfter": 0.05
+          "startTime": 14.537,
+          "endTime": 16.883,
+          "pauseAfter": 0.536,
+          "wordCount": 6,
+          "complexityScore": 0.1
         },
         {
           "text": "It understands your project context,",
-          "startTime": 18.363214285714285,
-          "endTime": 21.102285714285713,
-          "pauseAfter": 0.05
+          "startTime": 17.419,
+          "endTime": 19.636,
+          "pauseAfter": 0.286,
+          "wordCount": 5,
+          "complexityScore": 0.12
         },
         {
           "text": "follows your coding style,",
-          "startTime": 21.152285714285714,
-          "endTime": 23.09614285714286,
-          "pauseAfter": 0.05
+          "startTime": 19.922,
+          "endTime": 21.463,
+          "pauseAfter": 0.286,
+          "wordCount": 4,
+          "complexityScore": 0.05
         },
         {
           "text": "and even suggests better approaches than what you might have planned.",
-          "startTime": 23.14614285714286,
-          "endTime": 28.270857142857146,
-          "pauseAfter": 0.05
+          "startTime": 21.749,
+          "endTime": 25.829,
+          "pauseAfter": 0.536,
+          "wordCount": 11,
+          "complexityScore": 0.06
         },
         {
           "text": "I use it every day now.",
-          "startTime": 28.320857142857147,
-          "endTime": 29.822928571428577,
-          "pauseAfter": 0.05
+          "startTime": 26.365,
+          "endTime": 27.544,
+          "pauseAfter": 0.536,
+          "wordCount": 6,
+          "complexityScore": 0.02
         },
         {
           "text": "It's especially helpful for boilerplate code,",
-          "startTime": 29.872928571428577,
-          "endTime": 33.31885714285715,
-          "pauseAfter": 0.05
+          "startTime": 28.08,
+          "endTime": 30.926,
+          "pauseAfter": 0.286,
+          "wordCount": 6,
+          "complexityScore": 0.19
         },
         {
           "text": "API integrations,",
-          "startTime": 33.368857142857145,
-          "endTime": 34.69421428571429,
-          "pauseAfter": 0.05
+          "startTime": 31.212,
+          "endTime": 32.348,
+          "pauseAfter": 0.286,
+          "wordCount": 2,
+          "complexityScore": 0.33
         },
         {
           "text": "and implementing common patterns.",
-          "startTime": 34.744214285714285,
-          "endTime": 37.30657142857143,
-          "pauseAfter": 0.05
+          "startTime": 32.634,
+          "endTime": 34.763,
+          "pauseAfter": 0.536,
+          "wordCount": 4,
+          "complexityScore": 0.21
         },
         {
           "text": "The key is learning how to write good prompts - the better you describe what you want,",
-          "startTime": 37.35657142857143,
-          "endTime": 43.45321428571428,
-          "pauseAfter": 0.05
+          "startTime": 35.299,
+          "endTime": 40.095,
+          "pauseAfter": 0.286,
+          "wordCount": 17,
+          "complexityScore": 0.02
         },
         {
           "text": "the better code you get.",
-          "startTime": 43.50321428571428,
-          "endTime": 45.181999999999995,
-          "pauseAfter": 0.05
+          "startTime": 40.381,
+          "endTime": 41.766,
+          "pauseAfter": 0.536,
+          "wordCount": 5,
+          "complexityScore": 0.02
         }
-      ]
+      ],
+      "srtFile": "srt/9.srt",
+      "vttFile": "vtt/9.vtt"
     },
     {
       "id": 10,
@@ -754,76 +992,102 @@
         {
           "text": "AI also revolutionizes code review.",
           "startTime": 0,
-          "endTime": 2.8510261569416495,
-          "pauseAfter": 0.05
+          "endTime": 2.585,
+          "pauseAfter": 0.58,
+          "wordCount": 5,
+          "complexityScore": 0.15
         },
         {
           "text": "Traditional code review focuses on style and obvious bugs.",
-          "startTime": 2.9010261569416493,
-          "endTime": 7.557702213279677,
-          "pauseAfter": 0.05
+          "startTime": 3.165,
+          "endTime": 6.985,
+          "pauseAfter": 0.58,
+          "wordCount": 9,
+          "complexityScore": 0.13
         },
         {
           "text": "AI code review goes much deeper.",
-          "startTime": 7.607702213279677,
-          "endTime": 10.078591549295773,
-          "pauseAfter": 0.05
+          "startTime": 7.565,
+          "endTime": 9.534,
+          "pauseAfter": 0.58,
+          "wordCount": 6,
+          "complexityScore": 0.03
         },
         {
           "text": "It catches security vulnerabilities,",
-          "startTime": 10.128591549295773,
-          "endTime": 13.1696861167002,
-          "pauseAfter": 0.05
+          "startTime": 10.114,
+          "endTime": 12.702,
+          "pauseAfter": 0.309,
+          "wordCount": 4,
+          "complexityScore": 0.26
         },
         {
           "text": "performance issues,",
-          "startTime": 13.2196861167002,
-          "endTime": 14.835267605633803,
-          "pauseAfter": 0.05
+          "startTime": 13.011,
+          "endTime": 14.381,
+          "pauseAfter": 0.309,
+          "wordCount": 2,
+          "complexityScore": 0.25
         },
         {
           "text": "and suggests better algorithms.",
-          "startTime": 14.885267605633803,
-          "endTime": 17.45119114688129,
-          "pauseAfter": 0.05
+          "startTime": 14.69,
+          "endTime": 16.805,
+          "pauseAfter": 0.58,
+          "wordCount": 4,
+          "complexityScore": 0.15
         },
         {
           "text": "For example,",
-          "startTime": 17.50119114688129,
-          "endTime": 18.451533199195172,
-          "pauseAfter": 0.05
+          "startTime": 17.385,
+          "endTime": 18.146,
+          "pauseAfter": 0.309,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "it might spot a SQL injection vulnerability that human reviewers miss,",
-          "startTime": 18.501533199195173,
-          "endTime": 24.108551307847083,
-          "pauseAfter": 0.05
+          "startTime": 18.455,
+          "endTime": 23.07,
+          "pauseAfter": 0.309,
+          "wordCount": 11,
+          "complexityScore": 0.15
         },
         {
           "text": "or suggest using a more efficient data structure.",
-          "startTime": 24.158551307847084,
-          "endTime": 28.054953722334005,
-          "pauseAfter": 0.05
+          "startTime": 23.379,
+          "endTime": 26.544,
+          "pauseAfter": 0.58,
+          "wordCount": 8,
+          "complexityScore": 0.1
         },
         {
           "text": "It also ensures consistency across the team - everyone gets feedback based on the same standards.",
-          "startTime": 28.104953722334006,
-          "endTime": 35.80272434607646,
-          "pauseAfter": 0.05
+          "startTime": 27.124,
+          "endTime": 33.355,
+          "pauseAfter": 0.58,
+          "wordCount": 16,
+          "complexityScore": 0.09
         },
         {
           "text": "This doesn't replace human code review,",
-          "startTime": 35.85272434607646,
-          "endTime": 38.98885311871227,
-          "pauseAfter": 0.05
+          "startTime": 33.935,
+          "endTime": 36.446,
+          "pauseAfter": 0.309,
+          "wordCount": 6,
+          "complexityScore": 0.05
         },
         {
           "text": "but it handles the technical stuff so human reviewers can focus on business logic and architecture decisions.",
-          "startTime": 39.03885311871227,
-          "endTime": 47.782,
-          "pauseAfter": 0.05
+          "startTime": 36.755,
+          "endTime": 44.29,
+          "pauseAfter": 0.58,
+          "wordCount": 17,
+          "complexityScore": 0.14
         }
-      ]
+      ],
+      "srtFile": "srt/10.srt",
+      "vttFile": "vtt/10.vtt"
     },
     {
       "id": 11,
@@ -835,70 +1099,94 @@
         {
           "text": "AI is excellent at spotting bugs before they reach production.",
           "startTime": 0,
-          "endTime": 4.789104294478528,
-          "pauseAfter": 0.05
+          "endTime": 4.336,
+          "pauseAfter": 0.557,
+          "wordCount": 10,
+          "complexityScore": 0.12
         },
         {
           "text": "It recognizes common bug patterns and suggests fixes.",
-          "startTime": 4.839104294478528,
-          "endTime": 8.983521472392638,
-          "pauseAfter": 0.05
+          "startTime": 4.893,
+          "endTime": 8.289,
+          "pauseAfter": 0.557,
+          "wordCount": 8,
+          "complexityScore": 0.1
         },
         {
           "text": "For instance,",
-          "startTime": 9.03352147239264,
-          "endTime": 10.046601226993866,
-          "pauseAfter": 0.05
+          "startTime": 8.846,
+          "endTime": 9.664,
+          "pauseAfter": 0.296,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "it might catch null pointer exceptions,",
-          "startTime": 10.096601226993867,
-          "endTime": 13.135840490797548,
-          "pauseAfter": 0.05
+          "startTime": 9.96,
+          "endTime": 12.457,
+          "pauseAfter": 0.296,
+          "wordCount": 6,
+          "complexityScore": 0.11
         },
         {
           "text": "memory leaks,",
-          "startTime": 13.185840490797549,
-          "endTime": 14.198920245398776,
-          "pauseAfter": 0.05
+          "startTime": 12.753,
+          "endTime": 13.583,
+          "pauseAfter": 0.296,
+          "wordCount": 2,
+          "complexityScore": 0.1
         },
         {
           "text": "or race conditions.",
-          "startTime": 14.248920245398777,
-          "endTime": 15.722490797546016,
-          "pauseAfter": 0.05
+          "startTime": 13.879,
+          "endTime": 15.116,
+          "pauseAfter": 0.557,
+          "wordCount": 3,
+          "complexityScore": 0.18
         },
         {
           "text": "It also suggests refactoring opportunities - like extracting repeated code into functions or suggesting better design patterns.",
-          "startTime": 15.772490797546016,
-          "endTime": 25.903288343558287,
-          "pauseAfter": 0.05
+          "startTime": 15.673,
+          "endTime": 24.138,
+          "pauseAfter": 0.557,
+          "wordCount": 17,
+          "complexityScore": 0.17
         },
         {
           "text": "What's really impressive is that AI learns from the entire codebase,",
-          "startTime": 25.953288343558288,
-          "endTime": 31.202883435582827,
-          "pauseAfter": 0.05
+          "startTime": 24.695,
+          "endTime": 28.974,
+          "pauseAfter": 0.296,
+          "wordCount": 11,
+          "complexityScore": 0.08
         },
         {
           "text": "so it maintains consistency with existing patterns.",
-          "startTime": 31.252883435582827,
-          "endTime": 35.30520245398773,
-          "pauseAfter": 0.05
+          "startTime": 29.27,
+          "endTime": 32.647,
+          "pauseAfter": 0.557,
+          "wordCount": 7,
+          "complexityScore": 0.16
         },
         {
           "text": "I've had AI catch bugs that would have taken hours to debug later.",
-          "startTime": 35.35520245398773,
-          "endTime": 40.23640490797546,
-          "pauseAfter": 0.05
+          "startTime": 33.204,
+          "endTime": 37.087,
+          "pauseAfter": 0.557,
+          "wordCount": 13,
+          "complexityScore": 0
         },
         {
           "text": "It's like having a senior developer constantly reviewing your code.",
-          "startTime": 40.28640490797546,
-          "endTime": 45.536,
-          "pauseAfter": 0.05
+          "startTime": 37.644,
+          "endTime": 42.226,
+          "pauseAfter": 0.557,
+          "wordCount": 10,
+          "complexityScore": 0.15
         }
-      ]
+      ],
+      "srtFile": "srt/11.srt",
+      "vttFile": "vtt/11.vtt"
     },
     {
       "id": 12,
@@ -910,58 +1198,78 @@
         {
           "text": "Security is where AI really shines.",
           "startTime": 0,
-          "endTime": 2.806476614699332,
-          "pauseAfter": 0.05
+          "endTime": 2.577,
+          "pauseAfter": 0.547,
+          "wordCount": 6,
+          "complexityScore": 0.11
         },
         {
           "text": "It scans code for vulnerabilities in real-time as you write it.",
-          "startTime": 2.8564766146993317,
-          "endTime": 7.888779510022271,
-          "pauseAfter": 0.05
+          "startTime": 3.124,
+          "endTime": 7.26,
+          "pauseAfter": 0.547,
+          "wordCount": 11,
+          "complexityScore": 0.05
         },
         {
           "text": "It catches common issues like XSS vulnerabilities,",
-          "startTime": 7.938779510022271,
-          "endTime": 12.100106904231625,
-          "pauseAfter": 0.05
+          "startTime": 7.807,
+          "endTime": 11.287,
+          "pauseAfter": 0.292,
+          "wordCount": 7,
+          "complexityScore": 0.11
         },
         {
           "text": "weak authentication,",
-          "startTime": 12.150106904231626,
-          "endTime": 13.892057906458797,
-          "pauseAfter": 0.05
+          "startTime": 11.579,
+          "endTime": 13.125,
+          "pauseAfter": 0.292,
+          "wordCount": 2,
+          "complexityScore": 0.33
         },
         {
           "text": "and insecure data handling.",
-          "startTime": 13.942057906458798,
-          "endTime": 16.167884187082407,
-          "pauseAfter": 0.05
+          "startTime": 13.417,
+          "endTime": 15.257,
+          "pauseAfter": 0.547,
+          "wordCount": 4,
+          "complexityScore": 0.08
         },
         {
           "text": "But it goes beyond that - it also scans your dependencies for known vulnerabilities and suggests secure alternatives.",
-          "startTime": 16.217884187082408,
-          "endTime": 25.79861469933185,
-          "pauseAfter": 0.05
+          "startTime": 15.804,
+          "endTime": 23.784,
+          "pauseAfter": 0.547,
+          "wordCount": 18,
+          "complexityScore": 0.1
         },
         {
           "text": "The best part is that it explains why something is a security risk and how to fix it.",
-          "startTime": 25.84861469933185,
-          "endTime": 32.3325434298441,
-          "pauseAfter": 0.05
+          "startTime": 24.331,
+          "endTime": 29.657,
+          "pauseAfter": 0.547,
+          "wordCount": 18,
+          "complexityScore": 0.05
         },
         {
           "text": "This is incredibly valuable for teams that don't have dedicated security experts.",
-          "startTime": 32.3825434298441,
-          "endTime": 39.06002227171492,
-          "pauseAfter": 0.05
+          "startTime": 30.204,
+          "endTime": 35.826,
+          "pauseAfter": 0.547,
+          "wordCount": 12,
+          "complexityScore": 0.14
         },
         {
           "text": "AI essentially gives every developer security expertise.",
-          "startTime": 39.11002227171492,
-          "endTime": 43.852,
-          "pauseAfter": 0.05
+          "startTime": 36.373,
+          "endTime": 40.736,
+          "pauseAfter": 0.547,
+          "wordCount": 7,
+          "complexityScore": 0.28
         }
-      ]
+      ],
+      "srtFile": "srt/12.srt",
+      "vttFile": "vtt/12.vtt"
     },
     {
       "id": 13,
@@ -973,94 +1281,126 @@
         {
           "text": "I'll demo building a 'Food Recipe Suggestion API' using AI assistance.",
           "startTime": 0,
-          "endTime": 6.23954565701559,
-          "pauseAfter": 0.05
+          "endTime": 5.554,
+          "pauseAfter": 0.573,
+          "wordCount": 11,
+          "complexityScore": 0.1
         },
         {
           "text": "This API takes a list of ingredients like pork,",
-          "startTime": 6.28954565701559,
-          "endTime": 10.308236080178173,
-          "pauseAfter": 0.05
+          "startTime": 6.127,
+          "endTime": 9.322,
+          "pauseAfter": 0.306,
+          "wordCount": 9,
+          "complexityScore": 0.04
         },
         {
           "text": "potato,",
-          "startTime": 10.358236080178173,
-          "endTime": 10.992766146993318,
-          "pauseAfter": 0.05
+          "startTime": 9.628,
+          "endTime": 10.156,
+          "pauseAfter": 0.306,
+          "wordCount": 1,
+          "complexityScore": 0.2
         },
         {
           "text": "onion,",
-          "startTime": 11.04276614699332,
-          "endTime": 11.571541202672606,
-          "pauseAfter": 0.05
+          "startTime": 10.462,
+          "endTime": 10.876,
+          "pauseAfter": 0.306,
+          "wordCount": 1,
+          "complexityScore": 0
         },
         {
           "text": "sends a request to Gemini API,",
-          "startTime": 11.621541202672606,
-          "endTime": 14.159661469933186,
-          "pauseAfter": 0.05
+          "startTime": 11.182,
+          "endTime": 13.203,
+          "pauseAfter": 0.306,
+          "wordCount": 6,
+          "complexityScore": 0.05
         },
         {
           "text": "and returns suitable recipes.",
-          "startTime": 14.209661469933186,
-          "endTime": 16.853536748329624,
-          "pauseAfter": 0.05
+          "startTime": 13.509,
+          "endTime": 15.646,
+          "pauseAfter": 0.573,
+          "wordCount": 4,
+          "complexityScore": 0.1
         },
         {
           "text": "Just by describing the idea in comments,",
-          "startTime": 16.903536748329625,
-          "endTime": 20.39345211581292,
-          "pauseAfter": 0.05
+          "startTime": 16.219,
+          "endTime": 19.033,
+          "pauseAfter": 0.306,
+          "wordCount": 7,
+          "complexityScore": 0.09
         },
         {
           "text": "AI generates complete Flask API structure,",
-          "startTime": 20.44345211581292,
-          "endTime": 24.25063251670379,
-          "pauseAfter": 0.05
+          "startTime": 19.339,
+          "endTime": 22.46,
+          "pauseAfter": 0.306,
+          "wordCount": 6,
+          "complexityScore": 0.15
         },
         {
           "text": "input validation and error handling,",
-          "startTime": 24.30063251670379,
-          "endTime": 27.57903786191537,
-          "pauseAfter": 0.05
+          "startTime": 22.766,
+          "endTime": 25.454,
+          "pauseAfter": 0.306,
+          "wordCount": 5,
+          "complexityScore": 0.15
         },
         {
           "text": "Gemini API integration,",
-          "startTime": 27.62903786191537,
-          "endTime": 29.74413808463252,
-          "pauseAfter": 0.05
+          "startTime": 25.76,
+          "endTime": 27.56,
+          "pauseAfter": 0.306,
+          "wordCount": 3,
+          "complexityScore": 0.28
         },
         {
           "text": "and basic tests.",
-          "startTime": 29.79413808463252,
-          "endTime": 31.168953229398667,
-          "pauseAfter": 0.05
+          "startTime": 27.866,
+          "endTime": 28.944,
+          "pauseAfter": 0.573,
+          "wordCount": 3,
+          "complexityScore": 0
         },
         {
           "text": "Work that usually takes a full day now only takes 20 minutes.",
-          "startTime": 31.218953229398668,
-          "endTime": 36.40094877505568,
-          "pauseAfter": 0.05
+          "startTime": 29.517,
+          "endTime": 33.638,
+          "pauseAfter": 0.573,
+          "wordCount": 12,
+          "complexityScore": 0.05
         },
         {
           "text": "The code isn't perfect,",
-          "startTime": 36.45094877505568,
-          "endTime": 38.46029398663697,
-          "pauseAfter": 0.05
+          "startTime": 34.211,
+          "endTime": 35.8,
+          "pauseAfter": 0.306,
+          "wordCount": 4,
+          "complexityScore": 0.03
         },
         {
           "text": "but it follows best practices and is ready to deploy.",
-          "startTime": 38.51029398663697,
-          "endTime": 43.05775946547884,
-          "pauseAfter": 0.05
+          "startTime": 36.106,
+          "endTime": 39.738,
+          "pauseAfter": 0.573,
+          "wordCount": 10,
+          "complexityScore": 0.06
         },
         {
           "text": "Now I'll pause the slideshow and show you these steps live.",
-          "startTime": 43.107759465478836,
-          "endTime": 48.184,
-          "pauseAfter": 0.05
+          "startTime": 40.311,
+          "endTime": 44.538,
+          "pauseAfter": 0.573,
+          "wordCount": 11,
+          "complexityScore": 0.04
         }
-      ]
+      ],
+      "srtFile": "srt/13.srt",
+      "vttFile": "vtt/13.vtt"
     },
     {
       "id": 14,
@@ -1072,88 +1412,118 @@
         {
           "text": "Here are some best practices I've learned from using AI coding tools.",
           "startTime": 0,
-          "endTime": 5.536084130019121,
-          "pauseAfter": 0.05
+          "endTime": 4.791,
+          "pauseAfter": 0.606,
+          "wordCount": 12,
+          "complexityScore": 0.05
         },
         {
           "text": "First,",
-          "startTime": 5.58608413001912,
-          "endTime": 6.071705544933078,
-          "pauseAfter": 0.05
+          "startTime": 5.397,
+          "endTime": 5.773,
+          "pauseAfter": 0.323,
+          "wordCount": 1,
+          "complexityScore": 0
         },
         {
           "text": "always review AI-generated code carefully.",
-          "startTime": 6.121705544933078,
-          "endTime": 9.715304015296367,
-          "pauseAfter": 0.05
+          "startTime": 6.096,
+          "endTime": 9.107,
+          "pauseAfter": 0.606,
+          "wordCount": 5,
+          "complexityScore": 0.27
         },
         {
           "text": "Just because it compiles doesn't mean it's correct.",
-          "startTime": 9.765304015296367,
-          "endTime": 13.941648183556406,
-          "pauseAfter": 0.05
+          "startTime": 9.713,
+          "endTime": 13.011,
+          "pauseAfter": 0.606,
+          "wordCount": 8,
+          "complexityScore": 0.06
         },
         {
           "text": "Provide clear context in your comments - the better you explain what you want,",
-          "startTime": 13.991648183556407,
-          "endTime": 20.207602294455068,
-          "pauseAfter": 0.05
+          "startTime": 13.617,
+          "endTime": 18.502,
+          "pauseAfter": 0.323,
+          "wordCount": 14,
+          "complexityScore": 0.05
         },
         {
           "text": "the better results you get.",
-          "startTime": 20.25760229445507,
-          "endTime": 22.394336520076482,
-          "pauseAfter": 0.05
+          "startTime": 18.825,
+          "endTime": 20.501,
+          "pauseAfter": 0.606,
+          "wordCount": 5,
+          "complexityScore": 0.04
         },
         {
           "text": "Use AI suggestions as a starting point,",
-          "startTime": 22.444336520076483,
-          "endTime": 25.552313575525815,
-          "pauseAfter": 0.05
+          "startTime": 21.107,
+          "endTime": 23.583,
+          "pauseAfter": 0.323,
+          "wordCount": 7,
+          "complexityScore": 0.09
         },
         {
           "text": "not the final answer.",
-          "startTime": 25.602313575525816,
-          "endTime": 27.253426386233272,
-          "pauseAfter": 0.05
+          "startTime": 23.906,
+          "endTime": 25.196,
+          "pauseAfter": 0.606,
+          "wordCount": 4,
+          "complexityScore": 0.03
         },
         {
           "text": "Test everything thoroughly - AI can miss edge cases.",
-          "startTime": 27.303426386233273,
-          "endTime": 31.47977055449331,
-          "pauseAfter": 0.05
+          "startTime": 25.802,
+          "endTime": 29.136,
+          "pauseAfter": 0.606,
+          "wordCount": 9,
+          "complexityScore": 0.1
         },
         {
           "text": "And don't forget to understand the code AI generates.",
-          "startTime": 31.52977055449331,
-          "endTime": 35.80323900573614,
-          "pauseAfter": 0.05
+          "startTime": 29.742,
+          "endTime": 33.165,
+          "pauseAfter": 0.606,
+          "wordCount": 9,
+          "complexityScore": 0.11
         },
         {
           "text": "You'll need to maintain it later.",
-          "startTime": 35.853239005736135,
-          "endTime": 38.47559464627151,
-          "pauseAfter": 0.05
+          "startTime": 33.771,
+          "endTime": 35.814,
+          "pauseAfter": 0.606,
+          "wordCount": 6,
+          "complexityScore": 0.02
         },
         {
           "text": "The biggest mistake I see is people becoming too dependent on AI and losing their fundamental coding skills.",
-          "startTime": 38.52559464627151,
-          "endTime": 47.26678011472275,
-          "pauseAfter": 0.05
+          "startTime": 36.42,
+          "endTime": 43.404,
+          "pauseAfter": 0.606,
+          "wordCount": 18,
+          "complexityScore": 0.1
         },
         {
           "text": "AI should enhance your abilities,",
-          "startTime": 47.31678011472275,
-          "endTime": 50.03626003824091,
-          "pauseAfter": 0.05
+          "startTime": 44.01,
+          "endTime": 46.207,
+          "pauseAfter": 0.323,
+          "wordCount": 5,
+          "complexityScore": 0.14
         },
         {
           "text": "not replace them.",
-          "startTime": 50.08626003824091,
-          "endTime": 51.44599999999999,
-          "pauseAfter": 0.05
+          "startTime": 46.53,
+          "endTime": 47.648,
+          "pauseAfter": 0.606,
+          "wordCount": 3,
+          "complexityScore": 0.03
         }
-      ]
+      ],
+      "srtFile": "srt/14.srt",
+      "vttFile": "vtt/14.vtt"
     },
     {
       "id": 15,
@@ -1165,82 +1535,110 @@
         {
           "text": "AI also generates comprehensive test suites.",
           "startTime": 0,
-          "endTime": 3.591766816143498,
-          "pauseAfter": 0.05
+          "endTime": 3.288,
+          "pauseAfter": 0.514,
+          "wordCount": 6,
+          "complexityScore": 0.18
         },
         {
           "text": "Given a function,",
-          "startTime": 3.6417668161434977,
-          "endTime": 4.96504932735426,
-          "pauseAfter": 0.05
+          "startTime": 3.802,
+          "endTime": 4.872,
+          "pauseAfter": 0.274,
+          "wordCount": 3,
+          "complexityScore": 0.08
         },
         {
           "text": "it creates unit tests covering normal cases,",
-          "startTime": 5.01504932735426,
-          "endTime": 8.51229596412556,
-          "pauseAfter": 0.05
+          "startTime": 5.146,
+          "endTime": 7.952,
+          "pauseAfter": 0.274,
+          "wordCount": 7,
+          "complexityScore": 0.06
         },
         {
           "text": "edge cases,",
-          "startTime": 8.56229596412556,
-          "endTime": 9.412977578475337,
-          "pauseAfter": 0.05
+          "startTime": 8.226,
+          "endTime": 8.898,
+          "pauseAfter": 0.274,
+          "wordCount": 2,
+          "complexityScore": 0
         },
         {
           "text": "and error conditions.",
-          "startTime": 9.462977578475337,
-          "endTime": 11.164340807174888,
-          "pauseAfter": 0.05
+          "startTime": 9.172,
+          "endTime": 10.588,
+          "pauseAfter": 0.514,
+          "wordCount": 3,
+          "complexityScore": 0.18
         },
         {
           "text": "It generates integration tests for APIs and even UI tests for web applications.",
-          "startTime": 11.214340807174889,
-          "endTime": 17.45267264573991,
-          "pauseAfter": 0.05
+          "startTime": 11.102,
+          "endTime": 16.228,
+          "pauseAfter": 0.514,
+          "wordCount": 13,
+          "complexityScore": 0.14
         },
         {
           "text": "What's impressive is that AI often thinks of test cases that I would miss.",
-          "startTime": 17.50267264573991,
-          "endTime": 23.17388340807175,
-          "pauseAfter": 0.05
+          "startTime": 16.742,
+          "endTime": 21.264,
+          "pauseAfter": 0.514,
+          "wordCount": 14,
+          "complexityScore": 0.04
         },
         {
           "text": "It considers boundary values,",
-          "startTime": 23.22388340807175,
-          "endTime": 25.586887892376684,
-          "pauseAfter": 0.05
+          "startTime": 21.778,
+          "endTime": 23.74,
+          "pauseAfter": 0.274,
+          "wordCount": 4,
+          "complexityScore": 0.18
         },
         {
           "text": "null inputs,",
-          "startTime": 25.636887892376684,
-          "endTime": 26.58208968609866,
-          "pauseAfter": 0.05
+          "startTime": 24.014,
+          "endTime": 24.771,
+          "pauseAfter": 0.274,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "and unusual scenarios.",
-          "startTime": 26.63208968609866,
-          "endTime": 28.427973094170408,
-          "pauseAfter": 0.05
+          "startTime": 25.045,
+          "endTime": 26.547,
+          "pauseAfter": 0.514,
+          "wordCount": 3,
+          "complexityScore": 0.2
         },
         {
           "text": "I used to struggle with writing enough tests - now AI generates a comprehensive test suite,",
-          "startTime": 28.47797309417041,
-          "endTime": 35.56698654708521,
-          "pauseAfter": 0.05
+          "startTime": 27.061,
+          "endTime": 32.789,
+          "pauseAfter": 0.274,
+          "wordCount": 16,
+          "complexityScore": 0.08
         },
         {
           "text": "and I just review and customize it.",
-          "startTime": 35.616986547085205,
-          "endTime": 38.26355156950673,
-          "pauseAfter": 0.05
+          "startTime": 33.063,
+          "endTime": 35.196,
+          "pauseAfter": 0.514,
+          "wordCount": 7,
+          "complexityScore": 0.07
         },
         {
           "text": "Test coverage has improved dramatically on my projects.",
-          "startTime": 38.31355156950673,
-          "endTime": 42.756,
-          "pauseAfter": 0.05
+          "startTime": 35.71,
+          "endTime": 39.528,
+          "pauseAfter": 0.514,
+          "wordCount": 8,
+          "complexityScore": 0.12
         }
-      ]
+      ],
+      "srtFile": "srt/15.srt",
+      "vttFile": "vtt/15.vtt"
     },
     {
       "id": 16,
@@ -1252,64 +1650,86 @@
         {
           "text": "AI also makes test execution smarter.",
           "startTime": 0,
-          "endTime": 3.2015565610859733,
-          "pauseAfter": 0.05
+          "endTime": 2.953,
+          "pauseAfter": 0.571,
+          "wordCount": 6,
+          "complexityScore": 0.13
         },
         {
           "text": "Instead of running all tests every time,",
-          "startTime": 3.251556561085973,
-          "endTime": 6.659665158371041,
-          "pauseAfter": 0.05
+          "startTime": 3.524,
+          "endTime": 6.314,
+          "pauseAfter": 0.304,
+          "wordCount": 7,
+          "complexityScore": 0.04
         },
         {
           "text": "AI identifies which tests are relevant to your changes and runs those first.",
-          "startTime": 6.709665158371041,
-          "endTime": 13.216054298642534,
-          "pauseAfter": 0.05
+          "startTime": 6.618,
+          "endTime": 11.974,
+          "pauseAfter": 0.571,
+          "wordCount": 13,
+          "complexityScore": 0.06
         },
         {
           "text": "It detects flaky tests that sometimes pass and sometimes fail,",
-          "startTime": 13.266054298642535,
-          "endTime": 18.636407239819007,
-          "pauseAfter": 0.05
+          "startTime": 12.545,
+          "endTime": 17.029,
+          "pauseAfter": 0.304,
+          "wordCount": 10,
+          "complexityScore": 0.11
         },
         {
           "text": "helping you fix unreliable tests.",
-          "startTime": 18.686407239819008,
-          "endTime": 21.57813574660634,
-          "pauseAfter": 0.05
+          "startTime": 17.333,
+          "endTime": 19.741,
+          "pauseAfter": 0.571,
+          "wordCount": 5,
+          "complexityScore": 0.1
         },
         {
           "text": "When tests fail,",
-          "startTime": 21.62813574660634,
-          "endTime": 22.97072398190046,
-          "pauseAfter": 0.05
+          "startTime": 20.312,
+          "endTime": 21.397,
+          "pauseAfter": 0.304,
+          "wordCount": 3,
+          "complexityScore": 0
         },
         {
           "text": "AI analyzes the failures and suggests probable causes.",
-          "startTime": 23.02072398190046,
-          "endTime": 27.771420814479647,
-          "pauseAfter": 0.05
+          "startTime": 21.701,
+          "endTime": 25.656,
+          "pauseAfter": 0.571,
+          "wordCount": 8,
+          "complexityScore": 0.1
         },
         {
           "text": "It even tracks testing trends over time,",
-          "startTime": 27.821420814479648,
-          "endTime": 31.229529411764716,
-          "pauseAfter": 0.05
+          "startTime": 26.227,
+          "endTime": 29.017,
+          "pauseAfter": 0.304,
+          "wordCount": 7,
+          "complexityScore": 0.04
         },
         {
           "text": "helping you identify areas where quality is improving or declining.",
-          "startTime": 31.279529411764717,
-          "endTime": 37.166262443438924,
-          "pauseAfter": 0.05
+          "startTime": 29.321,
+          "endTime": 34.3,
+          "pauseAfter": 0.571,
+          "wordCount": 10,
+          "complexityScore": 0.16
         },
         {
           "text": "This intelligence transforms testing from a manual chore into an automated quality assurance system.",
-          "startTime": 37.21626244343892,
-          "endTime": 46.098000000000006,
-          "pauseAfter": 0.05
+          "startTime": 34.871,
+          "endTime": 42.789,
+          "pauseAfter": 0.571,
+          "wordCount": 14,
+          "complexityScore": 0.17
         }
-      ]
+      ],
+      "srtFile": "srt/16.srt",
+      "vttFile": "vtt/16.vtt"
     },
     {
       "id": 17,
@@ -1321,82 +1741,110 @@
         {
           "text": "Documentation is where AI really saves time.",
           "startTime": 0,
-          "endTime": 3.5424422700587086,
-          "pauseAfter": 0.05
+          "endTime": 3.151,
+          "pauseAfter": 0.597,
+          "wordCount": 7,
+          "complexityScore": 0.11
         },
         {
           "text": "It generates code comments,",
-          "startTime": 3.5924422700587084,
-          "endTime": 5.7945009784735815,
-          "pauseAfter": 0.05
+          "startTime": 3.748,
+          "endTime": 5.57,
+          "pauseAfter": 0.318,
+          "wordCount": 4,
+          "complexityScore": 0.19
         },
         {
           "text": "API documentation,",
-          "startTime": 5.844500978473581,
-          "endTime": 7.376367906066537,
-          "pauseAfter": 0.05
+          "startTime": 5.888,
+          "endTime": 7.205,
+          "pauseAfter": 0.318,
+          "wordCount": 2,
+          "complexityScore": 0.33
         },
         {
           "text": "and even user guides automatically.",
-          "startTime": 7.426367906066536,
-          "endTime": 10.298618395303327,
-          "pauseAfter": 0.05
+          "startTime": 7.523,
+          "endTime": 9.855,
+          "pauseAfter": 0.597,
+          "wordCount": 5,
+          "complexityScore": 0.12
         },
         {
           "text": "For API documentation,",
-          "startTime": 10.348618395303328,
-          "endTime": 12.167710371819963,
-          "pauseAfter": 0.05
+          "startTime": 10.452,
+          "endTime": 11.97,
+          "pauseAfter": 0.318,
+          "wordCount": 3,
+          "complexityScore": 0.22
         },
         {
           "text": "it creates complete OpenAPI specifications from your code,",
-          "startTime": 12.217710371819964,
-          "endTime": 17.004794520547946,
-          "pauseAfter": 0.05
+          "startTime": 12.288,
+          "endTime": 16.2,
+          "pauseAfter": 0.318,
+          "wordCount": 8,
+          "complexityScore": 0.14
         },
         {
           "text": "including examples and error responses.",
-          "startTime": 17.054794520547947,
-          "endTime": 20.310011741682978,
-          "pauseAfter": 0.05
+          "startTime": 16.518,
+          "endTime": 19.221,
+          "pauseAfter": 0.597,
+          "wordCount": 5,
+          "complexityScore": 0.2
         },
         {
           "text": "For user guides,",
-          "startTime": 20.36001174168298,
-          "endTime": 21.604653620352256,
-          "pauseAfter": 0.05
+          "startTime": 19.818,
+          "endTime": 20.803,
+          "pauseAfter": 0.318,
+          "wordCount": 3,
+          "complexityScore": 0.03
         },
         {
           "text": "it can analyze your application flow and create step-by-step instructions.",
-          "startTime": 21.654653620352256,
-          "endTime": 27.782121330724078,
-          "pauseAfter": 0.05
+          "startTime": 21.121,
+          "endTime": 26.195,
+          "pauseAfter": 0.597,
+          "wordCount": 10,
+          "complexityScore": 0.19
         },
         {
           "text": "The documentation stays in sync with your code automatically.",
-          "startTime": 27.83212133072408,
-          "endTime": 32.81068884540118,
-          "pauseAfter": 0.05
+          "startTime": 26.792,
+          "endTime": 30.842,
+          "pauseAfter": 0.597,
+          "wordCount": 9,
+          "complexityScore": 0.13
         },
         {
           "text": "I used to spend 20% of my time writing documentation - now AI handles most of it,",
-          "startTime": 32.86068884540118,
-          "endTime": 38.988156555772996,
-          "pauseAfter": 0.05
+          "startTime": 31.439,
+          "endTime": 36.312,
+          "pauseAfter": 0.318,
+          "wordCount": 17,
+          "complexityScore": 0.05
         },
         {
           "text": "and I just review and refine.",
-          "startTime": 39.03815655577299,
-          "endTime": 41.24021526418787,
-          "pauseAfter": 0.05
+          "startTime": 36.63,
+          "endTime": 38.372,
+          "pauseAfter": 0.597,
+          "wordCount": 6,
+          "complexityScore": 0.03
         },
         {
           "text": "The quality is often better than what I would write manually because AI is more consistent and thorough.",
-          "startTime": 41.290215264187864,
-          "endTime": 49.524,
-          "pauseAfter": 0.05
+          "startTime": 38.969,
+          "endTime": 45.883,
+          "pauseAfter": 0.597,
+          "wordCount": 18,
+          "complexityScore": 0.07
         }
-      ]
+      ],
+      "srtFile": "srt/17.srt",
+      "vttFile": "vtt/17.vtt"
     },
     {
       "id": 18,
@@ -1408,76 +1856,102 @@
         {
           "text": "Let's be honest about both the benefits and challenges of AI-assisted development.",
           "startTime": 0,
-          "endTime": 6.418285714285714,
-          "pauseAfter": 0.05
+          "endTime": 5.719,
+          "pauseAfter": 0.544,
+          "wordCount": 12,
+          "complexityScore": 0.15
         },
         {
           "text": "The benefits are real - faster development,",
-          "startTime": 6.468285714285714,
-          "endTime": 9.769118367346938,
-          "pauseAfter": 0.05
+          "startTime": 6.263,
+          "endTime": 8.929,
+          "pauseAfter": 0.29,
+          "wordCount": 7,
+          "complexityScore": 0.14
         },
         {
           "text": "fewer bugs,",
-          "startTime": 9.819118367346938,
-          "endTime": 10.644326530612243,
-          "pauseAfter": 0.05
+          "startTime": 9.219,
+          "endTime": 9.86,
+          "pauseAfter": 0.29,
+          "wordCount": 2,
+          "complexityScore": 0
         },
         {
           "text": "better documentation,",
-          "startTime": 10.694326530612244,
-          "endTime": 12.436432653061225,
-          "pauseAfter": 0.05
+          "startTime": 10.15,
+          "endTime": 11.654,
+          "pauseAfter": 0.29,
+          "wordCount": 2,
+          "complexityScore": 0.38
         },
         {
           "text": "and more consistent code quality.",
-          "startTime": 12.486432653061225,
-          "endTime": 15.053746938775511,
-          "pauseAfter": 0.05
+          "startTime": 11.944,
+          "endTime": 14.026,
+          "pauseAfter": 0.544,
+          "wordCount": 5,
+          "complexityScore": 0.15
         },
         {
           "text": "Teams report 30-40% productivity improvements.",
-          "startTime": 15.103746938775512,
-          "endTime": 18.863028571428572,
-          "pauseAfter": 0.05
+          "startTime": 14.57,
+          "endTime": 17.733,
+          "pauseAfter": 0.544,
+          "wordCount": 5,
+          "complexityScore": 0.28
         },
         {
           "text": "But there are challenges too.",
-          "startTime": 18.913028571428573,
-          "endTime": 21.11358367346939,
-          "pauseAfter": 0.05
+          "startTime": 18.277,
+          "endTime": 20.026,
+          "pauseAfter": 0.544,
+          "wordCount": 5,
+          "complexityScore": 0.08
         },
         {
           "text": "AI suggestions aren't always correct,",
-          "startTime": 21.16358367346939,
-          "endTime": 24.097657142857145,
-          "pauseAfter": 0.05
+          "startTime": 20.57,
+          "endTime": 22.949,
+          "pauseAfter": 0.29,
+          "wordCount": 5,
+          "complexityScore": 0.15
         },
         {
           "text": "so you need strong review processes.",
-          "startTime": 24.147657142857145,
-          "endTime": 26.898351020408164,
-          "pauseAfter": 0.05
+          "startTime": 23.239,
+          "endTime": 25.438,
+          "pauseAfter": 0.544,
+          "wordCount": 6,
+          "complexityScore": 0.1
         },
         {
           "text": "There's a learning curve for the tools.",
-          "startTime": 26.948351020408165,
-          "endTime": 29.88242448979592,
-          "pauseAfter": 0.05
+          "startTime": 25.982,
+          "endTime": 28.278,
+          "pauseAfter": 0.544,
+          "wordCount": 7,
+          "complexityScore": 0.03
         },
         {
           "text": "And there's a risk of becoming too dependent on AI and losing fundamental skills.",
-          "startTime": 29.93242448979592,
-          "endTime": 36.07564081632653,
-          "pauseAfter": 0.05
+          "startTime": 28.822,
+          "endTime": 33.748,
+          "pauseAfter": 0.544,
+          "wordCount": 14,
+          "complexityScore": 0.11
         },
         {
           "text": "The key is finding the right balance - using AI to handle routine tasks while maintaining your core development abilities.",
-          "startTime": 36.12564081632653,
-          "endTime": 45.478,
-          "pauseAfter": 0.05
+          "startTime": 34.292,
+          "endTime": 42.136,
+          "pauseAfter": 0.544,
+          "wordCount": 20,
+          "complexityScore": 0.1
         }
-      ]
+      ],
+      "srtFile": "srt/18.srt",
+      "vttFile": "vtt/18.vtt"
     },
     {
       "id": 19,
@@ -1489,70 +1963,94 @@
         {
           "text": "Here's what implementing AI tools actually looks like.",
           "startTime": 0,
-          "endTime": 4.297554655870445,
-          "pauseAfter": 0.05
+          "endTime": 3.918,
+          "pauseAfter": 0.569,
+          "wordCount": 8,
+          "complexityScore": 0.11
         },
         {
           "text": "It's not instant productivity gains - there's usually a 2-4 week learning period where productivity might actually decrease as people learn new workflows.",
-          "startTime": 4.347554655870445,
-          "endTime": 16.586242914979756,
-          "pauseAfter": 0.05
+          "startTime": 4.487,
+          "endTime": 14.652,
+          "pauseAfter": 0.569,
+          "wordCount": 23,
+          "complexityScore": 0.11
         },
         {
           "text": "Some team members adapt quickly,",
-          "startTime": 16.636242914979757,
-          "endTime": 19.15872064777328,
-          "pauseAfter": 0.05
+          "startTime": 15.221,
+          "endTime": 17.272,
+          "pauseAfter": 0.303,
+          "wordCount": 5,
+          "complexityScore": 0.04
         },
         {
           "text": "others need more time.",
-          "startTime": 19.20872064777328,
-          "endTime": 20.89037246963563,
-          "pauseAfter": 0.05
+          "startTime": 17.575,
+          "endTime": 18.936,
+          "pauseAfter": 0.569,
+          "wordCount": 4,
+          "complexityScore": 0.03
         },
         {
           "text": "You need to establish guidelines for when and how to use AI tools.",
-          "startTime": 20.94037246963563,
-          "endTime": 25.8919028340081,
-          "pauseAfter": 0.05
+          "startTime": 19.505,
+          "endTime": 23.565,
+          "pauseAfter": 0.569,
+          "wordCount": 13,
+          "complexityScore": 0.07
         },
         {
           "text": "The most successful implementations start small - pick one tool and one use case,",
-          "startTime": 25.9419028340081,
-          "endTime": 32.20138461538462,
-          "pauseAfter": 0.05
+          "startTime": 24.134,
+          "endTime": 29.291,
+          "pauseAfter": 0.303,
+          "wordCount": 14,
+          "complexityScore": 0.09
         },
         {
           "text": "learn it well,",
-          "startTime": 32.251384615384616,
-          "endTime": 33.27906072874494,
-          "pauseAfter": 0.05
+          "startTime": 29.594,
+          "endTime": 30.42,
+          "pauseAfter": 0.303,
+          "wordCount": 3,
+          "complexityScore": 0
         },
         {
           "text": "then expand.",
-          "startTime": 33.329060728744935,
-          "endTime": 34.263311740890686,
-          "pauseAfter": 0.05
+          "startTime": 30.723,
+          "endTime": 31.485,
+          "pauseAfter": 0.569,
+          "wordCount": 2,
+          "complexityScore": 0.05
         },
         {
           "text": "Don't try to adopt everything at once.",
-          "startTime": 34.31331174089068,
-          "endTime": 37.209489878542506,
-          "pauseAfter": 0.05
+          "startTime": 32.054,
+          "endTime": 34.431,
+          "pauseAfter": 0.569,
+          "wordCount": 7,
+          "complexityScore": 0.07
         },
         {
           "text": "Also,",
-          "startTime": 37.2594898785425,
-          "endTime": 37.6331902834008,
-          "pauseAfter": 0.05
+          "startTime": 35,
+          "endTime": 35.301,
+          "pauseAfter": 0.303,
+          "wordCount": 1,
+          "complexityScore": 0
         },
         {
           "text": "invest time in training - the teams that spend time learning how to use AI tools effectively see much better results.",
-          "startTime": 37.6831902834008,
-          "endTime": 46.65199999999999,
-          "pauseAfter": 0.05
+          "startTime": 35.604,
+          "endTime": 43.277,
+          "pauseAfter": 0.569,
+          "wordCount": 21,
+          "complexityScore": 0.05
         }
-      ]
+      ],
+      "srtFile": "srt/19.srt",
+      "vttFile": "vtt/19.vtt"
     },
     {
       "id": 20,
@@ -1564,106 +2062,142 @@
         {
           "text": "So how do you get started?",
           "startTime": 0,
-          "endTime": 1.942173913043478,
-          "pauseAfter": 0.05
+          "endTime": 1.637,
+          "pauseAfter": 0.504,
+          "wordCount": 6,
+          "complexityScore": 0.02
         },
         {
           "text": "First,",
-          "startTime": 1.9921739130434781,
-          "endTime": 2.4777173913043478,
-          "pauseAfter": 0.05
+          "startTime": 2.141,
+          "endTime": 2.511,
+          "pauseAfter": 0.336,
+          "wordCount": 1,
+          "complexityScore": 0
         },
         {
           "text": "pick one AI tool and one specific use case.",
-          "startTime": 2.5277173913043476,
-          "endTime": 5.82941304347826,
-          "pauseAfter": 0.05
+          "startTime": 2.847,
+          "endTime": 5.381,
+          "pauseAfter": 0.63,
+          "wordCount": 9,
+          "complexityScore": 0.02
         },
         {
           "text": "I recommend starting with Claude or GitHub Copilot for code generation - it's easy to learn and immediately useful.",
-          "startTime": 5.87941304347826,
-          "endTime": 15.201847826086954,
-          "pauseAfter": 0.05
+          "startTime": 6.011,
+          "endTime": 13.387,
+          "pauseAfter": 0.63,
+          "wordCount": 19,
+          "complexityScore": 0.13
         },
         {
           "text": "Try it on a small,",
-          "startTime": 15.251847826086955,
-          "endTime": 16.514260869565216,
-          "pauseAfter": 0.05
+          "startTime": 14.017,
+          "endTime": 14.979,
+          "pauseAfter": 0.336,
+          "wordCount": 5,
+          "complexityScore": 0
         },
         {
           "text": "non-critical project first.",
-          "startTime": 16.564260869565217,
-          "endTime": 18.89486956521739,
-          "pauseAfter": 0.05
+          "startTime": 15.315,
+          "endTime": 17.198,
+          "pauseAfter": 0.63,
+          "wordCount": 3,
+          "complexityScore": 0.2
         },
         {
           "text": "Spend time learning how to write good prompts.",
-          "startTime": 18.94486956521739,
-          "endTime": 22.635,
-          "pauseAfter": 0.05
+          "startTime": 17.828,
+          "endTime": 20.662,
+          "pauseAfter": 0.63,
+          "wordCount": 8,
+          "complexityScore": 0.03
         },
         {
           "text": "Track your results - measure how much time you save,",
-          "startTime": 22.685000000000002,
-          "endTime": 26.763565217391307,
-          "pauseAfter": 0.05
+          "startTime": 21.292,
+          "endTime": 24.42,
+          "pauseAfter": 0.336,
+          "wordCount": 10,
+          "complexityScore": 0.02
         },
         {
           "text": "how many bugs AI catches,",
-          "startTime": 26.813565217391307,
-          "endTime": 28.755739130434787,
-          "pauseAfter": 0.05
+          "startTime": 24.756,
+          "endTime": 26.245,
+          "pauseAfter": 0.336,
+          "wordCount": 5,
+          "complexityScore": 0.02
         },
         {
           "text": "things like that.",
-          "startTime": 28.805739130434787,
-          "endTime": 30.165260869565223,
-          "pauseAfter": 0.05
+          "startTime": 26.581,
+          "endTime": 27.628,
+          "pauseAfter": 0.63,
+          "wordCount": 3,
+          "complexityScore": 0.03
         },
         {
           "text": "Once you're comfortable with one tool,",
-          "startTime": 30.215260869565224,
-          "endTime": 33.32273913043479,
-          "pauseAfter": 0.05
+          "startTime": 28.258,
+          "endTime": 30.674,
+          "pauseAfter": 0.336,
+          "wordCount": 6,
+          "complexityScore": 0.07
         },
         {
           "text": "gradually add others.",
-          "startTime": 33.37273913043479,
-          "endTime": 35.12069565217392,
-          "pauseAfter": 0.05
+          "startTime": 31.01,
+          "endTime": 32.409,
+          "pauseAfter": 0.63,
+          "wordCount": 3,
+          "complexityScore": 0.17
         },
         {
           "text": "Remember,",
-          "startTime": 35.17069565217392,
-          "endTime": 35.94756521739131,
-          "pauseAfter": 0.05
+          "startTime": 33.039,
+          "endTime": 33.667,
+          "pauseAfter": 0.336,
+          "wordCount": 1,
+          "complexityScore": 0.2
         },
         {
           "text": "the goal isn't to use AI everywhere - it's to use AI where it adds the most value.",
-          "startTime": 35.997565217391305,
-          "endTime": 42.21252173913044,
-          "pauseAfter": 0.05
+          "startTime": 34.003,
+          "endTime": 38.78,
+          "pauseAfter": 0.63,
+          "wordCount": 18,
+          "complexityScore": 0.03
         },
         {
           "text": "And always maintain your fundamental development skills.",
-          "startTime": 42.262521739130435,
-          "endTime": 47.02084782608696,
-          "pauseAfter": 0.05
+          "startTime": 39.41,
+          "endTime": 43.286,
+          "pauseAfter": 0.63,
+          "wordCount": 7,
+          "complexityScore": 0.23
         },
         {
           "text": "AI is a powerful assistant,",
-          "startTime": 47.070847826086954,
-          "endTime": 49.20723913043478,
-          "pauseAfter": 0.05
+          "startTime": 43.916,
+          "endTime": 45.618,
+          "pauseAfter": 0.336,
+          "wordCount": 5,
+          "complexityScore": 0.15
         },
         {
           "text": "but you're still the developer making the important decisions.",
-          "startTime": 49.257239130434776,
-          "endTime": 54.403999999999996,
-          "pauseAfter": 0.05
+          "startTime": 45.954,
+          "endTime": 50.287,
+          "pauseAfter": 0.63,
+          "wordCount": 9,
+          "complexityScore": 0.17
         }
-      ]
+      ],
+      "srtFile": "srt/20.srt",
+      "vttFile": "vtt/20.vtt"
     }
   ]
 }

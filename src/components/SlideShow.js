@@ -1,6 +1,8 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import useKeyboard, { useTouchGestures } from '../hooks/useKeyboard';
 import SubtitleDisplay from './SubtitleDisplay';
+import VTTSubtitleDisplayManual from './VTTSubtitleDisplay';
+import SubtitleDebugPanel from './SubtitleDebugPanel';
 import NavigationControls from './NavigationControls';
 import { getCurrentSubtitle } from '../utils/subtitleTiming';
 
@@ -21,6 +23,7 @@ const SlideShow = ({ metadata }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [audioRef, setAudioRef] = useState(null);
   const [beatScale, setBeatScale] = useState(1);
+  const [showDebugPanel, setShowDebugPanel] = useState(false);
 
   // Audio event handlers
   const handleAudioTimeUpdate = useCallback((e) => {
@@ -154,6 +157,7 @@ const SlideShow = ({ metadata }) => {
   useKeyboard({
     onPrevious: goToPrevious,
     onNext: goToNext,
+    onToggleDebug: () => setShowDebugPanel(!showDebugPanel),
     isEnabled: !isLoading
   });
 
@@ -311,11 +315,23 @@ const SlideShow = ({ metadata }) => {
         showPlayButton={false}
       />
 
-      {/* Subtitle Display */}
-      <SubtitleDisplay
-        currentSubtitle={currentSubtitle}
-        isVisible={!isLoading && !!currentSubtitle}
-      />
+      {/* VTT Subtitle Display */}
+      {currentSlide?.vttFile && (
+        <VTTSubtitleDisplayManual
+          vttFile={currentSlide.vttFile}
+          currentTime={currentTime}
+          isVisible={!isLoading}
+          className="slideshow-subtitle"
+        />
+      )}
+
+      {/* Fallback to old subtitle display if no VTT file */}
+      {!currentSlide?.vttFile && (
+        <SubtitleDisplay
+          currentSubtitle={currentSubtitle}
+          isVisible={!isLoading && !!currentSubtitle}
+        />
+      )}
 
       {/* Progress Indicator */}
       <div className="progress-indicator">
@@ -355,10 +371,19 @@ const SlideShow = ({ metadata }) => {
       </div>
       */}
 
+      {/* Subtitle Debug Panel */}
+      <SubtitleDebugPanel
+        currentSlide={currentSlide}
+        currentTime={currentTime}
+        currentSubtitle={currentSubtitle}
+        isVisible={showDebugPanel}
+      />
+
       {/* Keyboard Shortcuts Hint */}
       <div className="keyboard-hints">
         <div className="hint">Space: Play/Pause</div>
         <div className="hint">← →: Previous/Next</div>
+        <div className="hint">D: Debug Panel</div>
         <div className="hint">Esc: Stop</div>
       </div>
     </div>

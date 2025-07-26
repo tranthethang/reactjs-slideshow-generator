@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { getAudioDurationInSeconds } = require('get-audio-duration');
+const { stringify } = require('subtitle');
 
 // Hàm phân chia text thành segments tại dấu câu
 function splitByPunctuation(text, punctuations) {
@@ -36,43 +37,206 @@ function splitByPunctuation(text, punctuations) {
   return segments;
 }
 
-// Thuật toán tính toán subtitle timing theo spec
+// Thuật toán tính toán subtitle timing cải tiến với phân tích ngữ nghĩa
 function calculateSubtitleTiming(textContent, audioDuration) {
   // 1. Tách text thành segments tại dấu câu
   const segments = splitByPunctuation(textContent, ['.', ',', '!', '?', ';', ':']);
   
-  // 2. Tính toán timing
-  const totalChars = textContent.replace(/[.,!?;:\s]/g, '').length; // Chỉ đếm chữ
-  const baseTimePerChar = audioDuration / totalChars;
+  if (segments.length === 0) return [];
   
-  // 3. Thời gian nghỉ tại dấu câu
+  // 2. Phân tích độ phức tạp của từng segment
+  const analyzedSegments = segments.map(segment => {
+    const words = segment.text.trim().split(/\s+/);
+    const syllableCount = estimateSyllables(segment.text);
+    const complexityScore = calculateComplexityScore(words);
+    
+    return {
+      ...segment,
+      wordCount: words.length,
+      syllableCount,
+      complexityScore,
+      // Điều chỉnh thời gian dựa trên độ phức tạp
+      adjustedCharCount: segment.charCount * (1 + complexityScore * 0.3)
+    };
+  });
+  
+  // 3. Tính toán timing dựa trên phân tích
+  const totalAdjustedChars = analyzedSegments.reduce((sum, seg) => sum + seg.adjustedCharCount, 0);
+  const baseSpeed = totalAdjustedChars / audioDuration; // ký tự điều chỉnh/giây
+  
+  // 4. Thời gian nghỉ thông minh dựa trên ngữ cảnh
   const pauseTimes = {
-    '.': 0, // giây
-    '!': 0,
-    '?': 0,
-    ',': 0,
-    ';': 0,
-    ':': 0
+    '.': Math.max(0.3, audioDuration * 0.015), // Tối thiểu 0.3s cho câu kết thúc
+    '!': Math.max(0.25, audioDuration * 0.012),
+    '?': Math.max(0.25, audioDuration * 0.012),
+    ',': Math.max(0.15, audioDuration * 0.008), // Ngắn hơn cho dấu phẩy
+    ';': Math.max(0.2, audioDuration * 0.01),
+    ':': Math.max(0.2, audioDuration * 0.01)
   };
   
-  // 4. Tạo timeline với pause
+  // 5. Tạo timeline với timing thông minh
   let currentTime = 0;
-  const timeline = segments.map(segment => {
-    const duration = segment.charCount * baseTimePerChar;
-    const pauseTime = pauseTimes[segment.endPunctuation] || 0.05;
+  const timeline = analyzedSegments.map((segment, index) => {
+    // Tính thời gian đọc dựa trên độ phức tạp
+    const baseDuration = segment.adjustedCharCount / baseSpeed;
+    
+    // Điều chỉnh cho segment đầu và cuối
+    let adjustedDuration = baseDuration;
+    if (index === 0) {
+      adjustedDuration *= 1.1; // Chậm hơn một chút ở đầu
+    }
+    if (index === analyzedSegments.length - 1) {
+      adjustedDuration *= 1.05; // Chậm hơn một chút ở cuối
+    }
+    
+    const pauseTime = pauseTimes[segment.endPunctuation] || Math.max(0.1, audioDuration * 0.005);
     
     const item = {
       text: segment.text.trim(),
-      startTime: currentTime,
-      endTime: currentTime + duration,
-      pauseAfter: pauseTime
+      startTime: Math.round(currentTime * 1000) / 1000,
+      endTime: Math.round((currentTime + adjustedDuration) * 1000) / 1000,
+      pauseAfter: Math.round(pauseTime * 1000) / 1000,
+      // Thêm metadata để debug
+      wordCount: segment.wordCount,
+      complexityScore: Math.round(segment.complexityScore * 100) / 100
     };
     
     currentTime = item.endTime + pauseTime;
     return item;
   });
   
+  // 6. Điều chỉnh cuối cùng để fit với audio duration
+  if (timeline.length > 0) {
+    const lastItem = timeline[timeline.length - 1];
+    const totalCalculatedTime = lastItem.endTime + lastItem.pauseAfter;
+    
+    // Chỉ điều chỉnh nếu chênh lệch > 5%
+    if (Math.abs(totalCalculatedTime - audioDuration) / audioDuration > 0.05) {
+      const compressionRatio = (audioDuration * 0.95) / totalCalculatedTime; // Để lại 5% buffer
+      let adjustedTime = 0;
+      
+      timeline.forEach(item => {
+        const originalDuration = item.endTime - item.startTime;
+        const adjustedDuration = originalDuration * compressionRatio;
+        const adjustedPause = item.pauseAfter * compressionRatio;
+        
+        item.startTime = Math.round(adjustedTime * 1000) / 1000;
+        item.endTime = Math.round((adjustedTime + adjustedDuration) * 1000) / 1000;
+        item.pauseAfter = Math.round(adjustedPause * 1000) / 1000;
+        
+        adjustedTime = item.endTime + item.pauseAfter;
+      });
+    }
+  }
+  
   return timeline;
+}
+
+// Hàm ước tính số âm tiết
+function estimateSyllables(text) {
+  const words = text.toLowerCase().replace(/[^a-z\s]/g, '').split(/\s+/);
+  let totalSyllables = 0;
+  
+  words.forEach(word => {
+    if (word.length === 0) return;
+    
+    // Đếm nguyên âm
+    const vowels = word.match(/[aeiouy]+/g);
+    let syllables = vowels ? vowels.length : 1;
+    
+    // Điều chỉnh cho 'e' cuối
+    if (word.endsWith('e') && syllables > 1) {
+      syllables--;
+    }
+    
+    // Tối thiểu 1 âm tiết
+    totalSyllables += Math.max(1, syllables);
+  });
+  
+  return totalSyllables;
+}
+
+// Hàm tính điểm độ phức tạp
+function calculateComplexityScore(words) {
+  let score = 0;
+  
+  words.forEach(word => {
+    const cleanWord = word.toLowerCase().replace(/[^a-z]/g, '');
+    
+    // Từ dài = phức tạp hơn
+    if (cleanWord.length > 8) score += 0.3;
+    else if (cleanWord.length > 5) score += 0.1;
+    
+    // Từ có nhiều âm tiết
+    const syllables = estimateSyllables(cleanWord);
+    if (syllables > 3) score += 0.2;
+    else if (syllables > 2) score += 0.1;
+    
+    // Từ chuyên môn (có chứa các pattern phổ biến)
+    if (/tion|sion|ment|ness|ity|ous|ful/.test(cleanWord)) {
+      score += 0.15;
+    }
+  });
+  
+  return Math.min(1, score / words.length); // Normalize theo số từ
+}
+
+// Hàm chuyển đổi timeline thành format subtitle chuẩn
+function timelineToSubtitleNodes(timeline) {
+  return timeline.map((item, index) => ({
+    type: 'cue',
+    data: {
+      start: Math.floor(item.startTime * 1000), // milliseconds
+      end: Math.floor(item.endTime * 1000),
+      text: item.text
+    }
+  }));
+}
+
+// Hàm tạo file SRT
+function generateSRTFile(timeline, outputPath) {
+  const subtitleNodes = timelineToSubtitleNodes(timeline);
+  
+  return new Promise((resolve, reject) => {
+    const writeStream = fs.createWriteStream(outputPath);
+    const stringifyStream = stringify({ format: 'SRT' });
+    
+    stringifyStream.pipe(writeStream);
+    
+    writeStream.on('finish', () => resolve(outputPath));
+    writeStream.on('error', reject);
+    stringifyStream.on('error', reject);
+    
+    // Ghi từng subtitle node
+    subtitleNodes.forEach(node => {
+      stringifyStream.write(node);
+    });
+    
+    stringifyStream.end();
+  });
+}
+
+// Hàm tạo file VTT
+function generateVTTFile(timeline, outputPath) {
+  const subtitleNodes = timelineToSubtitleNodes(timeline);
+  
+  return new Promise((resolve, reject) => {
+    const writeStream = fs.createWriteStream(outputPath);
+    const stringifyStream = stringify({ format: 'WebVTT' });
+    
+    stringifyStream.pipe(writeStream);
+    
+    writeStream.on('finish', () => resolve(outputPath));
+    writeStream.on('error', reject);
+    stringifyStream.on('error', reject);
+    
+    // Ghi từng subtitle node
+    subtitleNodes.forEach(node => {
+      stringifyStream.write(node);
+    });
+    
+    stringifyStream.end();
+  });
 }
 
 // Hàm quét và validate files
@@ -81,10 +245,23 @@ function scanFiles() {
   const imagesDir = path.join(publicDir, 'images');
   const audiosDir = path.join(publicDir, 'audios');
   const subtitlesDir = path.join(publicDir, 'subtitles');
+  const srtDir = path.join(publicDir, 'srt');
+  const vttDir = path.join(publicDir, 'vtt');
   
   // Kiểm tra thư mục tồn tại
   if (!fs.existsSync(imagesDir) || !fs.existsSync(audiosDir) || !fs.existsSync(subtitlesDir)) {
     throw new Error('Thiếu thư mục cần thiết: images/, audios/, hoặc subtitles/');
+  }
+  
+  // Tạo thư mục SRT và VTT nếu chưa tồn tại
+  if (!fs.existsSync(srtDir)) {
+    fs.mkdirSync(srtDir, { recursive: true });
+    console.log('✓ Đã tạo thư mục srt/');
+  }
+  
+  if (!fs.existsSync(vttDir)) {
+    fs.mkdirSync(vttDir, { recursive: true });
+    console.log('✓ Đã tạo thư mục vtt/');
   }
   
   // Lấy danh sách files
@@ -154,13 +331,25 @@ async function generateMetadata() {
         // Tính toán subtitle timeline
         const subtitleTimeline = calculateSubtitleTiming(subtitleContent, audioDuration);
         
+        // Tạo file SRT
+        const srtPath = path.join(__dirname, '../public/srt', `${slide.id}.srt`);
+        await generateSRTFile(subtitleTimeline, srtPath);
+        console.log(`  ✓ Đã tạo file SRT: ${slide.id}.srt`);
+        
+        // Tạo file VTT
+        const vttPath = path.join(__dirname, '../public/vtt', `${slide.id}.vtt`);
+        await generateVTTFile(subtitleTimeline, vttPath);
+        console.log(`  ✓ Đã tạo file VTT: ${slide.id}.vtt`);
+        
         processedSlides.push({
           id: slide.id,
           image: `images/${slide.image}`,
           audio: `audios/${slide.audio}`,
           audioDuration: Math.round(audioDuration * 100) / 100, // Làm tròn 2 chữ số thập phân
           subtitleContent,
-          subtitleTimeline
+          subtitleTimeline,
+          srtFile: `srt/${slide.id}.srt`,
+          vttFile: `vtt/${slide.id}.vtt`
         });
         
         console.log(`✓ Slide ${slide.id} hoàn thành`);
@@ -198,5 +387,10 @@ if (require.main === module) {
 module.exports = {
   generateMetadata,
   calculateSubtitleTiming,
-  splitByPunctuation
+  splitByPunctuation,
+  timelineToSubtitleNodes,
+  generateSRTFile,
+  generateVTTFile,
+  estimateSyllables,
+  calculateComplexityScore
 };

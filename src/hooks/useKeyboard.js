@@ -6,6 +6,7 @@ export const useKeyboard = ({
   onPrevious,
   onNext,
   onStop,
+  onToggleDebug,
   isEnabled = true
 }) => {
   // Hàm xử lý key press
@@ -13,7 +14,7 @@ export const useKeyboard = ({
     if (!isEnabled) return;
 
     // Ngăn default behavior cho các phím được handle
-    const handledKeys = [' ', 'ArrowLeft', 'ArrowRight', 'Escape'];
+    const handledKeys = [' ', 'ArrowLeft', 'ArrowRight', 'Escape', 'd', 'D'];
     if (handledKeys.includes(event.key)) {
       event.preventDefault();
     }
@@ -43,10 +44,17 @@ export const useKeyboard = ({
         }
         break;
         
+      case 'd':
+      case 'D': // D - Toggle Debug Panel
+        if (onToggleDebug) {
+          onToggleDebug();
+        }
+        break;
+        
       default:
         break;
     }
-  }, [onPlayPause, onPrevious, onNext, onStop, isEnabled]);
+  }, [onPlayPause, onPrevious, onNext, onStop, onToggleDebug, isEnabled]);
 
   // Hàm xử lý key down (cho continuous actions nếu cần)
   const handleKeyDown = useCallback((event) => {
