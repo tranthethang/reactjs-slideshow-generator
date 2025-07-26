@@ -18,16 +18,8 @@ const NavigationControls = ({
 
   return (
     <div className={`navigation-controls ${className}`}>
-      {/* Previous Button - Góc trái */}
-      <button 
-        className="nav-button prev-button"
-        onClick={onPrevious}
-        disabled={!canGoPrevious}
-        aria-label="Slide trước"
-      >
-        <span className="nav-icon">‹</span>
-      </button>
-
+      {/* Previous and Next buttons are hidden since keyboard navigation (arrow keys) is available */}
+      
       {/* Play/Pause Button - Góc phải, trên cùng */}
       {showPlayButton && (
         <button 
@@ -40,16 +32,6 @@ const NavigationControls = ({
           </span>
         </button>
       )}
-
-      {/* Next Button - Góc phải */}
-      <button 
-        className="nav-button next-button"
-        onClick={onNext}
-        disabled={!canGoNext}
-        aria-label="Slide tiếp theo"
-      >
-        <span className="nav-icon">›</span>
-      </button>
     </div>
   );
 };

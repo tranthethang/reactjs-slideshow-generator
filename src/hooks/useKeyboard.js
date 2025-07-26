@@ -7,6 +7,7 @@ export const useKeyboard = ({
   onNext,
   onStop,
   onToggleDebug,
+  onCycleImageMode,
   isEnabled = true
 }) => {
   // Hàm xử lý key press
@@ -14,7 +15,7 @@ export const useKeyboard = ({
     if (!isEnabled) return;
 
     // Ngăn default behavior cho các phím được handle
-    const handledKeys = [' ', 'ArrowLeft', 'ArrowRight', 'Escape', 'd', 'D'];
+    const handledKeys = [' ', 'ArrowLeft', 'ArrowRight', 'Escape', 'd', 'D', 'm', 'M'];
     if (handledKeys.includes(event.key)) {
       event.preventDefault();
     }
@@ -51,10 +52,17 @@ export const useKeyboard = ({
         }
         break;
         
+      case 'm':
+      case 'M': // M - Cycle Image Mode
+        if (onCycleImageMode) {
+          onCycleImageMode();
+        }
+        break;
+        
       default:
         break;
     }
-  }, [onPlayPause, onPrevious, onNext, onStop, onToggleDebug, isEnabled]);
+  }, [onPlayPause, onPrevious, onNext, onStop, onToggleDebug, onCycleImageMode, isEnabled]);
 
   // Hàm xử lý key down (cho continuous actions nếu cần)
   const handleKeyDown = useCallback((event) => {

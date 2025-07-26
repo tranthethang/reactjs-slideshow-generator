@@ -1,20 +1,34 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import useKeyboard, { useTouchGestures } from '../hooks/useKeyboard';
+import useImageLoader from '../hooks/useImageLoader';
+import useImagePreloader from '../hooks/useImagePreloader';
 import SubtitleDisplay from './SubtitleDisplay';
 import VTTSubtitleDisplayManual from './VTTSubtitleDisplay';
 import SubtitleDebugPanel from './SubtitleDebugPanel';
 import NavigationControls from './NavigationControls';
+import ImageModeControls from './ImageModeControls';
 import { getCurrentSubtitle } from '../utils/subtitleTiming';
 
 // Main slideshow container component
 const SlideShow = ({ metadata }) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const [isLoading, setIsLoading] = useState(false);
-  const [userHasInteracted, setUserHasInteracted] = useState(!!window.userHasInteracted);
+  const [imageDisplayMode, setImageDisplayMode] = useState('auto'); // 'contain', 'cover', 'fill', 'auto'
 
   // Current slide data
   const currentSlide = metadata?.slides?.[currentSlideIndex] || null;
   const totalSlides = metadata?.totalSlides || 0;
+
+  // Image loading hook
+  const { 
+    isLoading: imageLoading, 
+    hasError: imageError, 
+    imageDimensions,
+    handleImageLoad, 
+    handleImageError 
+  } = useImageLoader(currentSlide?.image);
+
+  // Image preloader hook for better performance
+  useImagePreloader(metadata, currentSlideIndex);
 
   // State for HTML audio player
   const [currentTime, setCurrentTime] = useState(0);
@@ -100,11 +114,49 @@ const SlideShow = ({ metadata }) => {
     }
   }, [currentSlideIndex, totalSlides]);
 
-  const goToSlide = useCallback((index) => {
-    if (index >= 0 && index < totalSlides && index !== currentSlideIndex) {
-      setCurrentSlideIndex(index);
+  // Handle image display mode change
+  const handleImageModeChange = useCallback((mode) => {
+    setImageDisplayMode(mode);
+  }, []);
+
+  // Calculate smart display mode based on image dimensions
+  const getSmartDisplayMode = useCallback(() => {
+    if (!imageDimensions) return 'contain';
+    
+    const { aspectRatio } = imageDimensions;
+    const screenAspectRatio = window.innerWidth / window.innerHeight;
+    
+    // If image is much wider than screen, use contain to show full width
+    if (aspectRatio > screenAspectRatio * 1.5) {
+      return 'contain';
     }
-  }, [currentSlideIndex, totalSlides]);
+    // If image is much taller than screen, use contain to show full height
+    else if (aspectRatio < screenAspectRatio * 0.7) {
+      return 'contain';
+    }
+    // If aspect ratios are similar, use cover for immersive experience
+    else {
+      return 'cover';
+    }
+  }, [imageDimensions]);
+
+  // Get effective display mode (resolve 'auto' to actual mode)
+  const effectiveDisplayMode = imageDisplayMode === 'auto' ? getSmartDisplayMode() : imageDisplayMode;
+
+  // Handle progress bar click/touch for seeking
+  const handleProgressBarClick = useCallback((e) => {
+    if (audioRef && duration > 0) {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const percentage = clickX / rect.width;
+      const newTime = percentage * duration;
+      
+      // Clamp the time between 0 and duration
+      const clampedTime = Math.max(0, Math.min(newTime, duration));
+      audioRef.currentTime = clampedTime;
+      setCurrentTime(clampedTime);
+    }
+  }, [audioRef, duration]);
 
   // Custom audio control functions
   const toggleAudio = useCallback(() => {
@@ -148,17 +200,25 @@ const SlideShow = ({ metadata }) => {
     
     // Enable audio playback globally
     window.userHasInteracted = true;
-    setUserHasInteracted(true);
   }, []);
 
 
+
+  // Cycle through image display modes
+  const cycleImageMode = useCallback(() => {
+    const modes = ['auto', 'contain', 'cover', 'fill'];
+    const currentIndex = modes.indexOf(imageDisplayMode);
+    const nextIndex = (currentIndex + 1) % modes.length;
+    setImageDisplayMode(modes[nextIndex]);
+  }, [imageDisplayMode]);
 
   // Keyboard shortcuts
   useKeyboard({
     onPrevious: goToPrevious,
     onNext: goToNext,
     onToggleDebug: () => setShowDebugPanel(!showDebugPanel),
-    isEnabled: !isLoading
+    onCycleImageMode: cycleImageMode,
+    isEnabled: !imageLoading
   });
 
   // Touch gestures cho mobile
@@ -166,19 +226,8 @@ const SlideShow = ({ metadata }) => {
     onSwipeLeft: goToNext,
     onSwipeRight: goToPrevious,
     onTap: handleUserInteraction, // Just enable user interaction on tap
-    isEnabled: !isLoading
+    isEnabled: !imageLoading
   });
-
-  // Effect để preload image
-  useEffect(() => {
-    if (currentSlide?.image) {
-      setIsLoading(true);
-      const img = new Image();
-      img.onload = () => setIsLoading(false);
-      img.onerror = () => setIsLoading(false);
-      img.src = currentSlide.image;
-    }
-  }, [currentSlide?.image]);
 
   // Loading state
   if (!metadata || !currentSlide) {
@@ -276,20 +325,45 @@ const SlideShow = ({ metadata }) => {
       )}
       
 
-      {/* Background Image */}
-      <div 
-        className={`slide-background ${isLoading ? 'loading' : ''}`}
-        style={{
-          backgroundImage: currentSlide?.image ? `url(${currentSlide.image})` : 'none',
-        }}
-      />
+      {/* Responsive Image Container */}
+      <div className="slide-image-container">
+        {currentSlide?.image && !imageError && (
+          <img
+            src={currentSlide.image}
+            alt={`Slide ${currentSlideIndex + 1}`}
+            className={`slide-image ${imageLoading ? 'loading' : ''} ${effectiveDisplayMode === 'cover' ? 'cover-mode' : ''} ${effectiveDisplayMode === 'fill' ? 'fill-mode' : ''}`}
+            onLoad={handleImageLoad}
+            onError={handleImageError}
+            style={{
+              opacity: imageLoading ? 0.7 : 1,
+              objectFit: effectiveDisplayMode,
+            }}
+          />
+        )}
+        
+        {/* Image Error State */}
+        {imageError && (
+          <div className="image-error">
+            <div className="error-icon">⚠️</div>
+            <p>Failed to load image</p>
+            <p className="error-details">Slide {currentSlideIndex + 1}</p>
+          </div>
+        )}
+      </div>
 
       {/* Loading Overlay */}
-      {isLoading && (
+      {imageLoading && (
         <div className="loading-overlay">
           <div className="loading-spinner" />
         </div>
       )}
+
+      {/* Image Display Mode Controls */}
+      <ImageModeControls
+        currentMode={imageDisplayMode}
+        onModeChange={handleImageModeChange}
+        isVisible={!imageLoading}
+      />
 
       {/* Navigation Controls - Only Previous/Next */}
       <NavigationControls
@@ -297,7 +371,7 @@ const SlideShow = ({ metadata }) => {
         onNext={goToNext}
         canGoPrevious={currentSlideIndex > 0}
         canGoNext={currentSlideIndex < totalSlides - 1}
-        isVisible={!isLoading}
+        isVisible={!imageLoading}
         showPlayButton={false}
       />
 
@@ -306,7 +380,7 @@ const SlideShow = ({ metadata }) => {
         <VTTSubtitleDisplayManual
           vttFile={currentSlide.vttFile}
           currentTime={currentTime}
-          isVisible={!isLoading}
+          isVisible={!imageLoading}
           className="slideshow-subtitle"
         />
       )}
@@ -315,7 +389,7 @@ const SlideShow = ({ metadata }) => {
       {!currentSlide?.vttFile && (
         <SubtitleDisplay
           currentSubtitle={currentSubtitle}
-          isVisible={!isLoading && !!currentSubtitle}
+          isVisible={!imageLoading && !!currentSubtitle}
         />
       )}
 
@@ -328,7 +402,15 @@ const SlideShow = ({ metadata }) => {
         {/* Audio Progress Bar */}
         {duration > 0 && (
           <div className="audio-progress">
-            <div className="progress-bar">
+            <div 
+              className="progress-bar"
+              onClick={handleProgressBarClick}
+              role="slider"
+              aria-label="Audio progress"
+              aria-valuemin="0"
+              aria-valuemax={Math.floor(duration)}
+              aria-valuenow={Math.floor(currentTime)}
+            >
               <div 
                 className="progress-fill"
                 style={{ width: `${(currentTime / duration) * 100}%` }}
@@ -369,6 +451,7 @@ const SlideShow = ({ metadata }) => {
       <div className="keyboard-hints">
         <div className="hint">Space: Play/Pause</div>
         <div className="hint">← →: Previous/Next</div>
+        <div className="hint">M: Image Mode</div>
         <div className="hint">D: Debug Panel</div>
         <div className="hint">Esc: Stop</div>
       </div>
