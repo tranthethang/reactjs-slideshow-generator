@@ -39,8 +39,8 @@ function splitByPunctuation(text, punctuations) {
 
 // Thuật toán tính toán subtitle timing cải tiến với phân tích ngữ nghĩa
 function calculateSubtitleTiming(textContent, audioDuration) {
-  // 1. Tách text thành segments tại dấu câu
-  const segments = splitByPunctuation(textContent, ['.', ',', '!', '?', ';', ':']);
+  // 1. Tách text thành segments chỉ tại dấu chấm để hiển thị cả câu
+  const segments = splitByPunctuation(textContent, ['.', '!', '?']);
   
   if (segments.length === 0) return [];
   
@@ -64,14 +64,11 @@ function calculateSubtitleTiming(textContent, audioDuration) {
   const totalAdjustedChars = analyzedSegments.reduce((sum, seg) => sum + seg.adjustedCharCount, 0);
   const baseSpeed = totalAdjustedChars / audioDuration; // ký tự điều chỉnh/giây
   
-  // 4. Thời gian nghỉ thông minh dựa trên ngữ cảnh
+  // 4. Thời gian nghỉ thông minh dựa trên ngữ cảnh (chỉ cho dấu chấm câu)
   const pauseTimes = {
-    '.': Math.max(0.3, audioDuration * 0.015), // Tối thiểu 0.3s cho câu kết thúc
-    '!': Math.max(0.25, audioDuration * 0.012),
-    '?': Math.max(0.25, audioDuration * 0.012),
-    ',': Math.max(0.15, audioDuration * 0.008), // Ngắn hơn cho dấu phẩy
-    ';': Math.max(0.2, audioDuration * 0.01),
-    ':': Math.max(0.2, audioDuration * 0.01)
+    '.': Math.max(0.4, audioDuration * 0.02), // Tối thiểu 0.4s cho câu kết thúc
+    '!': Math.max(0.3, audioDuration * 0.015), // Chấm than
+    '?': Math.max(0.3, audioDuration * 0.015)  // Chấm hỏi
   };
   
   // 5. Tạo timeline với timing thông minh

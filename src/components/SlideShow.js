@@ -275,21 +275,7 @@ const SlideShow = ({ metadata }) => {
         </button>
       )}
       
-      {/* Welcome Message for First Interaction */}
-      {!userHasInteracted && (
-        <div className="welcome-overlay">
-          <div className="welcome-message">
-            <h2>🎵 Slideshow với Audio</h2>
-            <p>Click vào màn hình để bắt đầu</p>
-            <p>Sử dụng:</p>
-            <ul>
-              <li><strong>Audio Player</strong>: Điều khiển phát nhạc</li>
-              <li><strong>← →</strong>: Previous/Next slide</li>
-              <li><strong>Swipe</strong>: Vuốt để chuyển slide</li>
-            </ul>
-          </div>
-        </div>
-      )}
+
       {/* Background Image */}
       <div 
         className={`slide-background ${isLoading ? 'loading' : ''}`}
